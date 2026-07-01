@@ -1,0 +1,98 @@
+/* ============================================================
+ * 设计 Token（借鉴 Spark-design 规范，统一色彩/间距/圆角/阴影）
+ * 唯一真实来源：所有色值通过变量引用，禁止散落硬编码
+ * ============================================================ */
+
+:root {
+  /* ---------- 主色系 Primary（蓝） ---------- */
+  --primary-1: #EBF5FF;
+  --primary-2: #C2DEFF;
+  --primary-3: #99C5FF;
+  --primary-5: #478AFF;
+  --primary-6: #216BFF;
+  --primary-7: #0F4BD9;
+
+  /* ---------- 中性灰 Grey ---------- */
+  --grey-1: #FAFAFA;
+  --grey-2: #F5F5F5;
+  --grey-3: #F0F0F0;
+  --grey-4: #E5E5E5;
+  --grey-5: #D9D9D9;
+  --grey-6: #BFBFBF;
+  --grey-7: #8C8C8C;
+  --grey-8: #595959;
+  --grey-9: #262626;
+
+  /* ---------- 语义化（亮色主题默认值） ---------- */
+  --brand-primary: var(--primary-6);
+  --brand-hover: var(--primary-5);
+  --brand-light: var(--primary-1);
+
+  --bg-app: var(--grey-1);          /* 整体底色 */
+  --bg-sidebar: #FBFBFC;            /* 侧边栏 */
+  --bg-surface: #FFFFFF;            /* 内容卡片/预览区 */
+  --bg-subtle: #EEEEF0;            /* 选中态填充 */
+
+  --text-1: rgba(0, 0, 0, .88);     /* 强调 */
+  --text-2: rgba(0, 0, 0, .65);     /* 次强调 */
+  --text-3: rgba(0, 0, 0, .45);     /* 描述/占位 */
+  --text-4: rgba(0, 0, 0, .25);     /* 禁用 */
+
+  --border-1: var(--grey-4);
+  --border-2: var(--grey-3);
+
+  --fill-hover: var(--grey-2);
+  --fill-active: var(--grey-3);
+
+  --shadow-light: 0 4px 10px 0 rgba(0, 0, 0, .06);
+  --shadow-base: 0 8px 20px 0 rgba(0, 0, 0, .08);
+
+  /* ---------- 圆角 ---------- */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-pill: 9999px;
+
+  /* ---------- 间距 ---------- */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 20px;
+  --sp-6: 24px;
+
+  /* ---------- 布局尺寸 ---------- */
+  --sidebar-w: 288px;
+  --topbar-h: 56px;
+
+  /* ---------- 字体 ---------- */
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei",
+    "PingFang SC", "Hiragino Sans GB", sans-serif;
+  --font-mono: "JetBrains Mono", "Cascadia Code", Consolas, Monaco, monospace;
+}
+
+/* ============================================================
+ * 暗色主题：仅重映射语义变量，组件无需改动
+ * ============================================================ */
+:root[data-theme="dark"] {
+  --brand-light: rgba(33, 107, 255, .16);
+
+  --bg-app: #17181C;
+  --bg-sidebar: #1C1D22;
+  --bg-surface: #1F2026;
+  --bg-subtle: #2A2C33;
+
+  --text-1: rgba(255, 255, 255, .92);
+  --text-2: rgba(255, 255, 255, .65);
+  --text-3: rgba(255, 255, 255, .45);
+  --text-4: rgba(255, 255, 255, .25);
+
+  --border-1: #34363D;
+  --border-2: #2A2C33;
+
+  --fill-hover: rgba(255, 255, 255, .06);
+  --fill-active: rgba(255, 255, 255, .10);
+
+  --shadow-light: 0 4px 10px 0 rgba(0, 0, 0, .3);
+  --shadow-base: 0 8px 20px 0 rgba(0, 0, 0, .4);
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>知识库</title>
+  <meta name="description" content="个人知识库 · 记录与 AI 讨论的方案" />
+
+  <!-- 设计 Token 与样式 -->
+  <link rel="stylesheet" href="assets/css/tokens.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- 代码高亮主题（亮/暗各一份，由 app.js 切换 disabled） -->
+  <link rel="stylesheet" href="assets/vendor/highlight/github.min.css" id="hljs-light" />
+  <link rel="stylesheet" href="assets/vendor/highlight/github-dark.min.css" id="hljs-dark" disabled />
+</head>
+<body>
+  <div class="app" id="app">
+    <!-- ============ 侧边栏 ============ -->
+    <aside class="sidebar">
+      <div class="sidebar__brand">
+        <div class="sidebar__logo">📚</div>
+        <div class="sidebar__title">知识库</div>
+      </div>
+
+      <div class="search">
+        <svg class="search__icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path>
+        </svg>
+        <input class="search__input" id="search" type="text" placeholder="搜索文档…" autocomplete="off" />
+      </div>
+
+      <div class="tag-filter">
+        <select class="tag-filter__select" id="tag-filter">
+          <option value="">全部文档</option>
+        </select>
+      </div>
+
+      <nav class="tree" id="tree">
+        <div class="state"><div class="spinner"></div><div>正在加载目录…</div></div>
+      </nav>
+
+      <div class="sidebar__footer">
+        <span id="file-count">—</span>
+        <button class="icon-btn" id="theme-toggle" title="切换主题">
+          <svg id="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+          </svg>
+          <svg id="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+        </button>
+      </div>
+    </aside>
+
+    <!-- ============ 拖拽调整分隔线 ============ -->
+    <div class="resize-handle" id="resize-handle"></div>
+
+    <!-- ============ 主区 ============ -->
+    <main class="main">
+      <header class="topbar">
+        <button class="icon-btn topbar__toggle" id="sidebar-toggle" title="收起 / 展开侧边栏">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+            <path d="M9 3v18"></path>
+          </svg>
+        </button>
+        <div class="breadcrumb" id="breadcrumb">
+          <span class="breadcrumb__cur">欢迎</span>
+        </div>
+        <span class="mode-badge" id="mode-badge" style="display:none" title="本地模式:支持上传/删除/自动刷新">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3" fill="currentColor"/>
+          </svg>
+          本地模式
+        </span>
+        <div class="topbar__actions">
+          <button class="icon-btn" id="upload-btn" title="上传文件到 docs/" style="display:none">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <path d="M17 8l-5-5-5 5"/><path d="M12 3v12"/>
+            </svg>
+          </button>
+          <input type="file" id="upload-input" multiple style="display:none"
+                 accept=".md,.markdown,.pdf,.docx,.html,.htm,.png,.jpg,.jpeg,.gif,.webp,.svg" />
+          <button class="icon-btn" id="open-raw" title="在新标签打开原文件" style="display:none">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <div class="content" id="content">
+        <!-- 渲染区 -->
+      </div>
+    </main>
+
+    <div class="scrim" id="scrim"></div>
+  </div>
+
+  <!-- ============ 依赖库（本地，离线可用） ============ -->
+  <script src="assets/vendor/marked/marked.min.js"></script>
+  <script src="assets/vendor/highlight/highlight.min.js"></script>
+  <script src="assets/vendor/mermaid/mermaid.min.js"></script>
+  <script src="assets/vendor/pdfjs/pdf.min.js"></script>
+  <script src="assets/vendor/docx-preview/jszip.min.js"></script>
+  <script src="assets/vendor/docx-preview/docx-preview.min.js"></script>
+
+  <!-- 全文搜索库 -->
+  <script src="https://cdn.jsdelivr.net/npm/minisearch@7.1.0/dist/umd/index.min.js"></script>
+
+  <!-- ============ 应用脚本 ============ -->
+  <script src="assets/js/viewers.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

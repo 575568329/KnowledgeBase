@@ -1,0 +1,401 @@
+{
+    "type":  "dir",
+    "name":  "docs",
+    "title":  "知识库",
+    "children":  [
+                     {
+                         "type":  "dir",
+                         "name":  "MOC-索引",
+                         "title":  "MOC-索引",
+                         "children":  [
+                                          {
+                                              "type":  "file",
+                                              "name":  "MOC_AI图片生成.md",
+                                              "title":  "MOC_AI图片生成",
+                                              "path":  "docs/MOC-索引/MOC_AI图片生成.md",
+                                              "mtime":  1782893379,
+                                              "tags":  [
+                                                           "MCP",
+                                                           "图片生成",
+                                                           "对比测试",
+                                                           "Pollinations",
+                                                           "Figma"
+                                                       ],
+                                              "content":  "--- tags: [MCP, 图片生成, 对比测试, Pollinations, Figma] --- MOC: AI 图片生成 本 MOC 聚合所有与 AI 图片生成相关的讨论、方案、测试、工具对比。 MCP 方案 - [[20260630214421_本地Claude绘制AI原型设计图方案]] — Figma MCP 原型设计 - [[20260630223000_AI生成网页图片物料方案对比]] — Pollinations vs Claude SVG 对比测试 - [[演示项目/物料测试/测试A_PollinationsAI版]] — Pollinations 实际效果 - [[演示项目/物料测试/测试B_Claude原生SVG版]] — Claude SVG 实际效果 相关工具 - Pollinations.ai: 免费 AI 图片生成,REST API - Figma MCP: Claude 官方 MCP,直接绘制原型 - Midjourney / Stable Diffusion: 商业级图片生成(待调研) 待深入探讨 - [ ] Midjourney vs Stable Diffusion 对比 - [ ] MCP 方案在生产环境的稳定性测试 - [ ] 图片生成的 prompt 工程最佳实践 --- 相关 MOC: - [[MOC_AI工具大全]](待创建) 标签: #MCP #图片生成 #对比测试 #Pollinations #Figma 创建日期: 2026-07-01 维护规则: 每新增 AI 图片生成相关文档,检查是否需要加到本 MOC"
+                                          },
+                                          {
+                                              "type":  "file",
+                                              "name":  "MOC_知识库建设.md",
+                                              "title":  "MOC_知识库建设",
+                                              "path":  "docs/MOC-索引/MOC_知识库建设.md",
+                                              "mtime":  1782893466,
+                                              "tags":  [
+                                                           "知识库",
+                                                           "PKM",
+                                                           "信息架构",
+                                                           "可扩展性",
+                                                           "PARA",
+                                                           "MOC"
+                                                       ],
+                                              "content":  "--- tags: [知识库, PKM, 信息架构, 可扩展性, PARA, MOC] --- MOC: 知识库建设 本 MOC 聚合所有关于本知识库系统的架构设计、功能规划、组织方案的讨论。 架构设计 - [[20260701113145_知识库信息架构与功能规划]] — 双向链接、反向链接、全文搜索、标签系统规划 - [[20260701135840_知识库文件组织最佳实践]] — PARA 方法、Dendron 对比、中文 schema 设计 - [[20260701144849_知识库可扩展性方案_含论文佐证]] — Miller\u0027s Law、认知负荷理论、8000 篇笔记实战案例 功能开发 - P0 已完成: - [[链接功能测试页]] — wiki 链接 + 双向链接测试 - 回退保留滚动位置 - P1 待开发: - 反向链接(Backlinks) - 正文全文搜索(FlexSearch/MiniSearch) - 标签系统(frontmatter tags + 侧边栏筛选) - P2/P3: - 文档 TOC 大纲 - 关系图谱(Graph View) 业界对标 - Quartz: 开源静态知识库 SSG,原生支持双向链接/反链/图谱/搜索 - Obsidian: PKM 桌面应用,社区共识:文件夹 ≤2 层 + MOC + 标签 - Dendron: 点层次命名,适合 10,000+ 笔记,但需 VS Code 扩展支持 - PARA 方法: Projects / Areas / Resources / Archives,防止活跃文件膨胀 关键决策记录 1. 不迁移到 Quartz(2026-07-01):保留\"零构建 + 本地全功能 + 多格式预览\"的独特优势 2. 不完全 Dendron 化(2026-07-01):dot 命名法对演示项目(HTML + 多文件)不适用,且缺工具支持 3. 采用文件夹 + MOC + 标签混合方案(2026-07-01):扁平 + 二级分组 + MOC 策展,可扩展到 1000+ 篇 待解决问题 - [ ] 侧边栏可拖拽调宽(便于搜索结果预览) - [ ] 目录树显示文档修改时间(\"3 天前\" / \"今天\") - [ ] MOC 自动反向链接(底部显示\"被哪些 MOC 引用\") --- 相关 MOC: - [[MOC_工具流程]](待创建) 标签: #知识库 #PKM #信息架构 #可扩展性 #PARA #MOC 创建日期: 2026-07-01 维护规则: 每次讨论知识库架构/功能,完成后更新本 MOC"
+                                          }
+                                      ]
+                     },
+                     {
+                         "type":  "dir",
+                         "name":  "参考资料",
+                         "title":  "参考资料",
+                         "children":  [
+                                          {
+                                              "type":  "dir",
+                                              "name":  "测试",
+                                              "title":  "测试",
+                                              "children":  [
+                                                               {
+                                                                   "type":  "file",
+                                                                   "name":  "链接功能测试页.md",
+                                                                   "title":  "链接功能测试页",
+                                                                   "path":  "docs/参考资料/测试/链接功能测试页.md",
+                                                                   "mtime":  1782889706,
+                                                                   "content":  "双向链接功能测试页 这是用来验证站内链接功能的测试文档。 1. Wiki 链接(Obsidian 风格) - 按标题链接:[[知识库信息架构与功能规划]] - 带显示文字:[[AI执行任务的脚本化策略|点我看脚本化策略]] - 链接到使用说明:[[使用说明]] 2. 相对路径链接(标准 Markdown) - 同目录文档:脚本化策略 - 回到使用说明:[[使用说明]] 3. 外部链接 - Quartz 项目 - Obsidian 官网 4. 失效链接(应显示警告样式) - [[这个文档根本不存在]] - 坏链接 5. 滚动测试占位内容 下面放很多行,用来测试\"滚到中间点链接跳走,再回退能回到原位置\"。 （滚动占位）行 01 （滚动占位）行 02 （滚动占位）行 03 （滚动占位）行 04 （滚动占位）行 05 （滚动占位）行 06 （滚动占位）行 07 （滚动占位）行 08 （滚动占位）行 09 （滚动占位）行 10 （滚动占位）行 11 （滚动占位）行 12 （滚动占位）行 13 （滚动占位）行 14 （滚动占位）行 15 （滚动占位）行 16 （滚动占位）行 17 （滚动占位）行 18 （滚动占位）行 19 （滚动占位）行 20 结尾 链到规划文档做回退测试:[[知识库信息架构与功能规划]]"
+                                                               }
+                                                           ]
+                                          },
+                                          {
+                                              "type":  "dir",
+                                              "name":  "模板",
+                                              "title":  "模板",
+                                              "children":  [
+                                                               {
+                                                                   "type":  "file",
+                                                                   "name":  "01_方案讨论模板.md",
+                                                                   "title":  "方案讨论模板",
+                                                                   "path":  "docs/参考资料/模板/01_方案讨论模板.md",
+                                                                   "mtime":  1782821173,
+                                                                   "content":  "示例:方案讨论记录模板 这是一篇示例文档,演示 Markdown 的各种渲染效果。你可以删掉它,换成自己和 AI 讨论的真实方案。 背景 记录一下讨论这个方案的起因和要解决的问题。 方案对比 | 方案 | 优点 | 缺点 | 结论 | |------|------|------|------| | 方案 A | 简单直接 | 扩展性差 | ❌ | | 方案 B | 灵活 | 复杂度高 | ✅ 采用 | | 方案 C | 性能好 | 成本高 | 备选 | 关键代码 ``javascript // 示例:防抖函数 function debounce(fn, delay) { let timer = null; return function (...args) { clearTimeout(timer); timer = setTimeout(() =\u003e fn.apply(this, args), delay); }; } ` `python 示例:类型注解 def greet(name: str) -\u003e str: return f\"Hello, {name}!\" ` 流程图(Mermaid) `mermaid flowchart LR A[需求] --\u003e B{方案评估} B --\u003e|可行| C[实现] B --\u003e|不可行| D[重新设计] C --\u003e E[验证] D --\u003e B `` 引用与提示 \u003e 💡 这是一段引用,可以用来强调 AI 给出的关键结论或注意事项。 待办清单 - [x] 完成方案调研 - [x] 搭建知识库框架 - [ ] 补充更多文档 --- 最后更新:记得每次讨论后更新这里。"
+                                                               }
+                                                           ]
+                                          }
+                                      ]
+                     },
+                     {
+                         "type":  "dir",
+                         "name":  "技术方案",
+                         "title":  "技术方案",
+                         "children":  [
+                                          {
+                                              "type":  "dir",
+                                              "name":  "AI工具",
+                                              "title":  "AI工具",
+                                              "children":  [
+                                                               {
+                                                                   "type":  "file",
+                                                                   "name":  "20260630214421_本地Claude绘制AI原型设计图方案.md",
+                                                                   "title":  "本地Claude绘制AI原型设计图方案",
+                                                                   "path":  "docs/技术方案/AI工具/20260630214421_本地Claude绘制AI原型设计图方案.md",
+                                                                   "mtime":  1782827133,
+                                                                   "content":  "用本地 Claude 进行 AI 原型/设计图绘制 — 方案调研 \u003e 调研日期:2026-06-30 \u003e 核心问题:能否用本地的 Claude(Claude Code)来绘制原型或设计图,类似蓝湖、MasterGo 那种,并能切片导出图片素材用于网页开发。 \u003e 结论先行:可以。当前生态以 Figma 为事实标准,推荐 Claude Code + Figma MCP 的 use_figma 工具,直接在 Figma 画布生成可编辑、可切片的设计图。 --- 一、先厘清:两种不同的\"产物形态\" 选错方向会走弯路,先分清你要的是哪一种: | 产物形态 | 是什么 | 谁擅长 | |---------|--------|--------| | 可编辑的设计稿(矢量图层、画板、组件,可在画布拖拽改、可切片导出图片) | Figma/MasterGo 那种文件 | 设计工具 + MCP | | HTML/代码原型(浏览器能跑、能点的高保真页面) | 代码即设计 | Claude 本身最强 | 本需求(生成完整 UI 图 → 在上面切片 → 拿图片物料做网页)属于第一种:可编辑、可切片的设计稿。 --- 二、最终推荐方案 方案 A:Claude Code + Figma MCP 的 use_figma 工具 ⭐ 首选 这是\"本地 Claude 直接生成设计图\"的正向路径,不经过代码中间层。 能力(来自 Figma 官方教程,2026-05 推出的 use_figma 工具): - 直接在 Figma 画布上创建 / 编辑 Frame、矩形、文本、组件 - 自动应用 Auto Layout - 调用你 Figma 里已有的 Design System(组件库 / 变量 / 样式)生成符合规范的设计 - 输出可编辑图层,可直接在 Figma 切片导出图片素材 工作流: `` 终端对 Claude 说:\"用 use_figma 和我的设计系统,为搜索页生成一个空状态\" ↓ Claude 通过 MCP 调用 use_figma 工具 ↓ 直接在 Figma 画布生成可编辑 Frame(使用你的真实组件) ↓ 在 Figma 里切片导出图片素材 → 用于网页开发 ` 限制: - 需要你 Figma 里已有设计系统(组件 / 变量),才能生成符合规范的设计;Figma 是空的时只能用基础形状拼 - 截至 2026-06 仍在 Beta,Figma 称未来会变成按量付费功能,当前免费 方案 B:Figma Make(Figma 自带 AI,零配置)⭐ 备选 - 不依赖本地 Claude,是 Figma 云端自己的 AI - 文本提示 → 直接生成可编辑的 Figma 矢量设计稿(不是代码) - 可上传参考图、调颜色字体,开箱即用、质量稳定 - 若只看重\"快速拿到可切片设计图\"这个结果,这条路最省事 方案 C:Figma Agent(2026-05 推出,更高级) - 比 Make 更强的设计 Agent,接受复杂任务、自动调用组件库与 Design Tokens - 可接入自定义工具 / 社区技能 - 同样在 Figma 内,不在本地终端 --- 三、Figma MCP 配置步骤(方案 A 落地) \u003e 前置:需要 Figma 的 Dev 或 Full 付费席位;安装 Figma 桌面版;本地已装 Claude Code。 1. 安装官方 Figma 插件(自带 MCP 配置 + Agent Skills): `bash claude plugin install figma@claude-plugins-official ` 2. 在 Figma 开启 MCP server(二选一): - 远程服务器(推荐,大多数人用这个):OAuth 登录即可,功能最全 - 桌面服务器:Figma 桌面版 → Preferences → 开启 Dev Mode MCP Server 开关,本地起服务(仅 Figma 打开时运行) 3. 手动配置(若不用插件): `bash 远程 claude mcp add --scope user --transport http figma \u003cFigma 给的 URL\u003e 或桌面版 claude mcp add --transport sse figma-dev-mode-mcp-server \u003c本地URL\u003e ` 用 claude mcp list 验证连接状态。 4. 使用:对话里给 Claude 你的 Figma 文件链接 + 提示词,例如: \u003e \"用 use_figma 和我的设计系统,为这个登录页面 [Figma链接] 生成一个暗色主题变体\" Figma MCP 三个核心工具 | 工具 | 方向 | 用途 | |------"
+                                                               },
+                                                               {
+                                                                   "type":  "file",
+                                                                   "name":  "20260630223000_AI生成网页图片物料方案对比.md",
+                                                                   "title":  "AI生成网页图片物料方案对比",
+                                                                   "path":  "docs/技术方案/AI工具/20260630223000_AI生成网页图片物料方案对比.md",
+                                                                   "mtime":  1782869747,
+                                                                   "content":  "AI 生成网页图片物料方案对比与实践 \u003e 调研日期:2026-06-30 \u003e 核心问题:前端开发时(尤其是电商、设计感网站)缺乏物料(商品图、图标、背景等),能否让 AI 直接生成符合要求的图片? \u003e 验证结论:可行。已有成熟免费方案,可通过 MCP 接入 Claude Code,边写代码边自动生成图片。 --- 一、问题场景 用 AI 生成网站(如 Claude Code 写前端)时,常遇到\"代码写好了,图片素材空缺\"的尴尬: - 电商页需要商品照、品牌 Logo、Hero 大图 - Landing Page 需要功能图标、氛围背景、用户头像 - 临时方案是用占位图(lorem picsum / placeholder)或手动找素材,打断开发流程 理想方案:AI 写代码的同时自动生成配套图片物料,直接存进项目,无需人工介入。 --- 二、方案全景(2026 年中) 2.1 主流图片生成 API 对比(商用级) | 模型 | 提供商 | 强项 | 价格参考(2026) | |------|-------|------|--------------| | Nano Banana 2(Gemini 3.1 Flash Image) | Google | 快、便宜、文字渲染准、角色一致性好 | $0.09/张(1K/2K),4K 约 $0.175 | | Flux 2 Pro | Black Forest Labs | 照片级真实感最强 | 按 API 提供商定价 | | Imagen 4 Ultra | Google | 文字渲染 + 出图速度 | Google Cloud 计费 | | GPT Image 1.5 | OpenAI | 复杂多主体场景 | 约 $0.04~0.08/张 | | Ideogram v3 | Ideogram | 海报/Logo/印刷文字 | $0.08/张 | 关键趋势(2026 调研证实): - 不存在单一最优模型,生产环境按物料类型路由(电商产品图→Nano Banana 2,照片级大图→Flux 2 Pro,带文字 Banner→Ideogram/Imagen) - 聚合 API 兴起:fal.ai、Replicate、Atlas Cloud、Puter.js 提供一个 key 调多模型,免厂商锁定 - 免费档质量提升:Pollinations、Leonardo(150 tokens/天)可满足非商用原型需求 2.2 Claude Code 直接接入的方案 | 方案 | 工具 | 成本 | 适合场景 | |------|------|------|---------| | Pollinations MCP(官方) | @pollinations/model-context-protocol | 免费无限(无需 key) | 原型/测试/学习项目 | | TamerinTECH/claude-code-generate-images-mcp | Google Gemini / Azure | Gemini 有免费额度 | 兼顾质量和成本 | | ImageGen Claude Code Plugin | OpenAI Codex gpt-image | 走 ChatGPT 订阅,不单独计费 | 已订阅 ChatGPT 用户 | | 自建 ComfyUI + Flux(本地) | 本地 GPU + MCP | 零 API 费,无限生成 | 有 GPU、要数据本地、高频使用 | Claude 原生能力补充:Claude 不能生成照片级位图,但擅长手写 SVG 矢量图形——图标、Logo、几何装饰、扁平风插画,代码即时生成、零成本、完全可编辑。 --- 三、本次实践:对比测试 为验证方案实际效果,搭建了同一电商页面,两套物料方案的 A/B 对比: - 测试 A:测试A_PollinationsAI版.html — 通过 Pollinations MCP + Flux 模型生成 8 张真实位图(logo、Hero、3 图标、3 商品) - 测试 B:测试B_Claude原生SVG版.html — Claude 手写内联 SVG 矢量图形,无外部请求 两页面布局/文案/样式完全一致,唯一变量是图片来源。 3.1 技术实现对比(基于源码分析) \u003e 重要声明:本对比基于两个测试页的完整 HTML 源码分析,从代码实现、资源加载、技术复杂度等角度评估。我未实际截图查看浏览器渲染效果(AI 无法运行浏览器),视觉真实感、美观度等主观评价需用户实际打开页面判断。 代码复杂度: | 维度 | Pollinations AI 版 | Claude SVG 版 | |------|-------------------|"
+                                                               },
+                                                               {
+                                                                   "type":  "file",
+                                                                   "name":  "20260701_ChatLab方案对比.md",
+                                                                   "title":  "ChatLab方案对比",
+                                                                   "path":  "docs/技术方案/AI工具/20260701_ChatLab方案对比.md",
+                                                                   "mtime":  1782872039,
+                                                                   "content":  "ChatLab vs 我们的 PowerShell 脚本 - 深度对比 --- 🎯 ChatLab 是什么？ 定位：本地化的智能聊天记录分析平台（桌面应用 + Web UI） 核心理念： \u003e 用 AI Agent 深度分析你的社交聊天历史，挖掘对话模式和洞察 --- 📦 ChatLab 的使用方式 安装 方式 1：桌面应用（推荐） `` 1. 访问 chatlab.fun 或 GitHub Releases 2. 下载安装包（Windows/Mac/Linux） 3. 双击安装，启动即用 ` 方式 2：命令行（开发者） `bash 安装（需要 Node.js ≥ 20） npm i chatlab-cli -g 启动（自动打开浏览器） chatlab start 后台运行 chatlab start --daemon ` 使用流程 `mermaid graph LR A[导出聊天记录] --\u003e B[导入到 ChatLab] B --\u003e C[流式解析] C --\u003e D[本地持久化] D --\u003e E1[SQL 查询] D --\u003e E2[AI 智能分析] E1 --\u003e F[可视化展示] E2 --\u003e F ` 5 步工作流程： 1. 导出 - 从 WhatsApp/QQ/Discord 等平台导出聊天记录 2. 导入 - 拖拽文件到 ChatLab 3. 解析 - 流式处理（支持百万级消息） 4. 分析 - SQL 查询 + AI Agent（24+ 工具） 5. 可视化 - 趋势图、互动频率、排名等 --- 🤖 ChatLab 的 AI 分析能力 核心：AI Agent + 24+ 工具 功能示例： - 📊 \"分析我和 Alice 的对话频率变化趋势\" - 🔍 \"找出去年 12 月讨论最多的话题\" - 💬 \"总结我在群聊中最常提到的关键词\" - 📈 \"统计我每天发消息的时间分布\" - 🎯 \"提取与工作相关的所有对话\" 技术实现： - Function Calling - AI 自动选择合适工具 - SQL 引擎 - 灵活的结构化查询 - 语义搜索 - 理解自然语言问题 - 上下文感知 - 记住对话上下文 --- 🎨 ChatLab 的界面 Web UI 特性： - 📱 响应式设计（桌面 + 移动端） - 📊 数据可视化仪表板 - 🔍 实时搜索和过滤 - 💬 AI 对话式查询界面 - 📈 图表和统计报表 支持的可视化： - 时间趋势图 - 互动热力图 - 消息类型分布 - 活跃时段分析 - 词云和关键词 --- 📊 ChatLab vs 我们的脚本 - 详细对比 | 维度 | ChatLab | 我们的 PowerShell 脚本 | |------|---------|---------------------| | 定位 | 通用聊天记录分析平台 | 专门针对 Claude Code 对话 | | 界面 | ⭐⭐⭐⭐⭐ 精美 Web UI + 桌面应用 | ❌ 纯命令行 | | AI 能力 | ⭐⭐⭐⭐⭐ 24+ 工具 + Agent | ❌ 无 AI 分析 | | 可视化 | ⭐⭐⭐⭐⭐ 图表、趋势、热力图 | ❌ 纯文本输出 | | 交互方式 | 自然语言对话式查询 | 命令行参数 | | 数据规模 | ⭐⭐⭐⭐⭐ 百万级消息流式处理 | ⭐⭐ 单会话处理 | | 支持平台 | WhatsApp/QQ/Discord 等 8+ | 仅 Claude Code | | 安装 | 需 Node.js 或下载安装包 | ✅ Windows 原生 | | 响应速度 | ⭐⭐⭐ 复杂查询需等待 | ⭐⭐⭐⭐⭐ 秒级输出 | | 学习成本 | ⭐⭐⭐ 需熟悉界面和功能 | ⭐⭐⭐⭐⭐ 一条命令 | | 离线使用 | ✅ 完全本地运行 | ✅ 完全本地运行 | | 隐私保护 | ⭐⭐⭐⭐⭐ 数据不出本地 | ⭐⭐⭐⭐⭐ 数据不出本地 | | 可编程性 | ⭐⭐ 有 API 但复杂 | ⭐⭐⭐⭐⭐ JSON 输出易集成 | --- 🎯 ChatLab 的核心优势 1. 智能分析能力 ⭐⭐⭐⭐⭐ ` 用户：\"分析我和 Bob 今年的对话频率变化\" ChatLab AI： 1. 查询你和 Bob 的所有消息 2. 按月分组统计 3. 生成趋势图 4. 发现关键事件（如 3 月对话突然增多） ` 2. 可视化洞察 ⭐⭐⭐⭐⭐ - 📊 互动热力图（哪些时段最活跃） - 📈 消息趋势线（对话频率变化） - 🏆 好友排行榜（互动最多的人） - ☁️ 关键词云（讨论最多的话题） 3. 跨平台统一 ⭐⭐⭐⭐ ` 支持 8+ 平台的聊天记录： WhatsApp, QQ, Discord, Telegram, iMessag"
+                                                               },
+                                                               {
+                                                                   "type":  "file",
+                                                                   "name":  "20260701_对话分析业界方案研究.md",
+                                                                   "title":  "对话分析业界方案研究",
+                                                                   "path":  "docs/技术方案/AI工具/20260701_对话分析业界方案研究.md",
+                                                                   "mtime":  1782873407,
+                                                                   "content":  "AI 对话总结分析 - 业界方案研究 \u003e 问题：如何从 AI 编程助手的对话历史中提取项目经验和洞察？ --- 🎯 核心结论 你的直觉是对的！让 Claude 直接读取对话文件并智能分析，比用工具转换格式更合理。 业界实践证明： 1. ✅ 直接读取 \u003e 预处理转换 2. ✅ LLM 总结 \u003e 简单提取 3. ✅ 结构化查询 + AI 理解 = 最优方案 --- 📊 业界实际方案 1. Cursor / Claude Code 的技术选择 核心发现：这些顶级 AI 编程工具不使用 RAG 向量搜索，而是： 他们用什么？ - ✅ Grep/Ripgrep - 精确字符串匹配 - ✅ AST 导航 - 结构化代码分析 - ✅ 直接文件读取 - 选择性加载上下文 - ✅ 大上下文窗口 - 200K+ tokens 直接加载 为什么不用 RAG？ \u003e \"Vector embeddings don\u0027t capture code structure reliably\" \u003e \u003e 来源：Is RAG Dead? What AI Agents Use Instead 关键理由： 1. 代码是结构化的，不是语义文本 2. 向量搜索的灾难性失败 - 找不到定义时会编造不存在的方法 3. Grep 更精确 - 为精确查找而设计 4. 上下文完整性 - 函数需要完整的签名、类型、导入 对对话分析的启示： - 对话记录是半结构化的（有角色、时间戳、工具调用） - 精确匹配（如查找某个问题）用 Grep - 理解和总结用 LLM 直接读取 --- 2. LLM 对话总结的生产实践 来源：Galileo AI - LLM Summarization Production Guide 核心挑战 \u003e \"Each processed token risks your credibility\" 常见失败： - ❌ 关键信号在压缩中丢失（如\"退款请求\"被忽略） - ❌ 多主题对话中的截止日期遗漏 - ❌ 过度概括导致误导性结论 推荐方案 A. 提示工程策略 `` 1. 明确定义范围和输出格式（JSON Schema） 2. 链式思考（Chain of Thought）- 让模型追踪上下文 3. 混合方法：先提取关键句子 → 再总结 ` 示例提示： ` 任务：分析这个项目开发对话，提取： 1. 用户提出的问题（按优先级） 2. 技术决策及理由 3. 遇到的错误和解决方案 4. 可复用的经验教训 输出格式：JSON { \"problems\": [{...}], \"decisions\": [{...}], \"solutions\": [{...}], \"lessons\": [{...}] } ` B. 长对话处理模式 Map-Reduce 模式： ` 1. 将对话分块（带 10% 重叠） 2. 并行总结每个块（Map） 3. 递归合并总结（Reduce） 4. 生成最终综合报告 ` 滑动窗口模式： ` 1. 维护持久记忆核心 2. 仅重新总结最近交流 3. 增量更新到记忆系统 ` 两阶段模式： ` 阶段 1：关键词/实体提取 阶段 2：基于关键点的抽象总结 ` C. 防止幻觉 Decompose-then-verify 流程： ` 1. 将总结拆分为原子级声明 2. 每个声明与原文验证 3. NLI 模型检查事实一致性 4. 计算总体可信度分数 ` --- 3. LLM 总结的三大策略 来源：Master LLM Summarization Strategies 策略对比 | 策略 | 适用场景 | 幻觉风险 | 适合对话分析吗？ | |------|----------|----------|----------------| | 抽取式 | 精确引用（法律/医疗） | ⭐低 | ⭐⭐⭐ 适合提取关键对话 | | 生成式 | 可读性报告 | ⭐⭐⭐高 | ⭐⭐⭐⭐ 适合经验总结 | | 混合式 | 多文档综合 | ⭐⭐中 | ⭐⭐⭐⭐⭐ 最适合！ | 推荐：混合式 ` 步骤 1：抽取关键对话片段（问题、错误、决策点） 步骤 2：生成式总结每个主题 步骤 3：结构化输出到记忆系统 ` RAG 集成建议 \u003e \"Retrieval grounds summaries in source material\" 对对话分析的应用： 1. 先语义检索相关对话段 2. 将检索结果作为上下文 3. LLM 基于实际内容总结 4. 减少编造，提高准确性 --- 🚀 针对 Claude Code 对话的最佳实践 方案 A：直接 LLM 总结（推荐） 适用：单个会话 \u003c 200K tokens ` 步骤： 1. 提供 JSONL 文件路径 2. 明确指定提取目标（问题/决策/经验） 3. 要求"
+                                                               },
+                                                               {
+                                                                   "type":  "file",
+                                                                   "name":  "20260701100000_Claude对话历史分析方案.md",
+                                                                   "title":  "Claude对话历史分析方案",
+                                                                   "path":  "docs/技术方案/AI工具/20260701100000_Claude对话历史分析方案.md",
+                                                                   "mtime":  1782871063,
+                                                                   "content":  "Claude 对话历史分析方案 - 实施总结 \u003e 生成时间：2026-07-01 \u003e 项目：KnowledgeBase --- ✅ 核心结论 Claude Code 完全可以读取并分析自己的对话历史 存储位置 `` C:\\Users\\\u003c用户名\u003e\\.claude\\projects\\\u003c项目路径\u003e\\\u003c会话ID\u003e.jsonl ` 文件格式 - JSONL（每行一个 JSON 对象） - 包含完整对话记录：用户消息、AI 回复、工具调用、执行结果 - 支持解析时间戳、消息关联（通过 UUID） --- 🛠️ 已实现工具 1. analyze-conversation-v2.ps1 功能： - 解析 JSONL 对话文件 - 提取用户问题、助手回复、工具使用统计 - 生成 Markdown 报告 + JSON 数据 使用方法： `powershell .\\scripts\\analyze-conversation-v2.ps1 -SessionFile \"C:\\Users\\fjyu9\\.claude\\projects\\xxx\\\u003c会话ID\u003e.jsonl\" -ProjectName \"项目名称\" -OutputDir \"docs/项目复盘\" `` 输出： - \u003c时间戳\u003e_\u003c项目名\u003e_对话分析.md - 可读性强的分析报告 - \u003c时间戳\u003e_\u003c项目名\u003e_对话数据.json - 结构化数据，可用于二次开发 --- 🌐 业界方案验证 通过网络搜索发现多个类似项目，证明方案可行性： 1. ChatLab - 本地聊天记录分析工具（AI Agent 驱动） 2. WayLog - AI 对话导出为 git 友好知识库 3. Simon Willison 的 claude-code-transcripts - 专门处理 Claude Code 对话记录 4. Inside Claude Code: Session File Format - 会话文件格式深度解析 --- 📊 实测效果 当前会话分析结果 | 指标 | 数量 | |------|------| | 用户消息 | 3 条 | | 助手回复 | 18 条 | | 对话轮次 | 3 轮 | | 生成报告大小 | ~5KB（优化后） | 关键提取内容： 1. 用户需求：\"从对话历史中提取项目开发经验\" 2. 技术方案：探测存储位置 → 解析 JSONL → 生成报告 3. 工具实现：PowerShell 脚本 + JSON 解析 --- 🎯 应用场景 1. 项目复盘 开发结束后，一键提取所有技术讨论和决策记录 2. 知识沉淀 将对话中的经验教训自动归档到 memory 系统 3. 跨项目学习 聚合多个项目的相关主题（如\"性能优化\"、\"错误处理\"） 4. 团队分享 生成可读性强的 Markdown 报告，便于团队学习 --- 🔄 工作流程 `mermaid graph LR A[开发项目] --\u003e B[对话产生] B --\u003e C[.jsonl 文件] C --\u003e D[运行分析脚本] D --\u003e E[生成报告] E --\u003e F1[Markdown 报告] E --\u003e F2[JSON 数据] F1 --\u003e G[人工提炼] F2 --\u003e H[自动化处理] G --\u003e I[写入 memory/] H --\u003e I ` --- 📌 下一步优化方向 1. 增强智能提取 - [ ] 使用 Claude API 对对话内容做语义分析 - [ ] 自动识别\"问题-解决方案\"对 - [ ] 提取代码片段并分类 2. 与记忆系统集成 - [ ] 自动写入 memory/debugging.md - [ ] 生成 memory/decisions/*.md - [ ] 更新 MEMORY.md 索引 3. 批量处理 - [ ] 扫描所有历史项目 - [ ] 按主题聚合（前端、后端、数据库等） - [ ] 生成知识图谱 4. 可视化 - [ ] 对话时间线图 - [ ] 工具使用热力图 - [ ] 问题类型分布饼图 --- 💡 关键经验 1. JSONL 解析注意点： - message.content 可能是字符串或数组（包含 text/tool_use 块） - 需过滤工具调用结果，只提取真实对话 - 大文件需分段读取（\u003e256KB 时） 2. PowerShell 最佳实践： - 使用 ConvertFrom-Json 解析 - 用 Write-Progress 提示进度 - 输出同时生成 Markdown + JSON 3. 文档组织： - 按时间戳命名，便于追溯 - 放在 docs/项目复盘/ 独立目录 - 遵循 CLAUDE.md 的文档管理规范 --- 📚 参考资源 - Claude Code 文档 -"
+                                                               }
+                                                           ]
+                                          },
+                                          {
+                                              "type":  "dir",
+                                              "name":  "工具流程",
+                                              "title":  "工具流程",
+                                              "children":  [
+                                                               {
+                                                                   "type":  "file",
+                                                                   "name":  "20260701_项目复盘方案总纲.md",
+                                                                   "title":  "项目复盘方案总纲",
+                                                                   "path":  "docs/技术方案/工具流程/20260701_项目复盘方案总纲.md",
+                                                                   "mtime":  1782877045,
+                                                                   "content":  "项目复盘方案:从调研到 Skill 落地(总纲) \u003e 生成时间:2026-07-01 \u003e 状态:skill 已实现并验证 \u003e 这是阅读入口,串联整个探索历程与最终产出。 --- 一句话总结 要从 Claude Code 的开发对话中提炼项目经验,最优解不是\"用工具把对话导出来读\",而是让 Claude 直接读取清洗后的对话做智能分析 —— 脚本负责机械去噪,Claude 负责理解归纳,并用\"归纳+审阅\"分角色制衡保证质量。最终沉淀为 project-retrospective skill。 --- 探索历程(为什么是这个方案) 阶段 1:验证可行性 Claude 能读取自己的对话历史。存储在 C:\\Users\\\u003c用户\u003e\\.claude\\projects\\\u003c项目编码\u003e\\\u003c会话ID\u003e.jsonl。 → 详见 Claude对话历史分析方案 阶段 2:调研现有工具 对比了三个方案,结论是它们都只做\"读取+格式转换\",不做智能分析: | 工具 | 本质 | 局限 | |------|------|------| | Simon Willison / claude-code-transcripts | JSONL → 精美 HTML | 只美化展示,无分析 | | 我们的 PowerShell 脚本(早期) | JSONL → Markdown+JSON | 只统计,无理解 | | ChatLab | 通用聊天分析平台 | 重量级、非专用 | → 详见 SimonWillison方案详解、ChatLab方案对比 阶段 3:关键洞察 用户提出:\"这些工具只是把聊天读出来,不如直接让 Claude 自己读并分析。\" 业界证据支持这个直觉: - Cursor/Claude Code 都用 grep+直接读取,而非 RAG 向量搜索 - LLM 长文本总结最佳实践:Map-Reduce 分块、混合式提取 → 详见 对话分析业界方案研究 阶段 4:落地为 Skill 把方案固化成可复用的 project-retrospective skill。 --- 最终方案架构 `` 用户触发 skill(提供:项目路径 / 日期范围 / 补充要求) │ ▼ [脚本] discover_sessions.ps1 — 按消息级时间戳发现会话 │ ▼ [脚本] extract_clean.ps1 — 剔除噪音,提取干净对话 │ (只留 typed 用户输入 + assistant 文本,剥离 think 块) ▼ [Claude 分角色分析] ├─ 归纳者:Map-Reduce 总结,每条标来源 └─ 审阅者:独立子代理挑错(查遗漏/偏差/臆测) │ ↑↓ 最多三轮 → 交用户审批 ▼ [三路产出] ├─ 复盘文档 → docs/项目复盘/ ├─ 记忆沉淀 → memory/ + MEMORY.md └─ 开发经验 → 独立文件(反哺后续开发) ` --- 核心设计决策(踩坑换来的) | 决策 | 为什么 | |------|--------| | 脚本去噪 + Claude 分析 分工 | 原始 JSONL 90% 是噪音,单文件达 18MB,不能直接 Read | | 按消息级 timestamp 筛选 | 单会话可能跨多天(实测 6/23→6/26),文件时间会误判 | | 用 promptSource:\"typed\" 过滤 | 精确标记用户真实输入,是去噪的关键锚点 | | 剥离 \u003cthink\u003e 标签 | 部分模型把思考塞进 text 块,混入会干扰归纳 | | 归纳+审阅分角色 | 单一视角会\"自我确认\",独立审阅能发现盲区 | | 最多三轮交人审批 | 防止 AI 反复纠结\"再优化一点\"陷入循环 | --- 验证结果 用真实项目 rpp-web 验证: - 会话发现:6/23-6/26 范围命中 10 个会话,正确识别跨天会话 - 去噪效果:12MB 大会话 → 452KB(3.6%);小会话 28KB 无压力通读 - 分角色实测:审阅者成功抓到归纳者的一处臆测(把 login/get 误定性为\"贴错\")+ 两处遗漏 → 证明制衡机制有效 --- 相关文件索引 Skill 本体(全局) - C:\\Users\\fjyu9\\.claude\\skills\\project-retrospective\\SKILL.md — 主入口 - scripts\\discover_sessions.ps1 — 会话发现 - scripts\\extract_clean.ps1 — 噪音过滤 - templates\\retrospective.md — 复盘文档模板 - templates\\dev-experience.md — 开发经验模板 调研文档(本知识库) - Clau"
+                                                               },
+                                                               {
+                                                                   "type":  "file",
+                                                                   "name":  "20260701110505_AI执行任务的脚本化策略.md",
+                                                                   "title":  "AI执行任务的脚本化策略",
+                                                                   "path":  "docs/技术方案/工具流程/20260701110505_AI执行任务的脚本化策略.md",
+                                                                   "mtime":  1782875174,
+                                                                   "content":  "AI 执行任务的脚本化策略:什么该沉淀,存哪,如何复用 \u003e 讨论日期:2026-07-01 \u003e 核心问题:AI 执行任务时是否应尽量写脚本来完成?脚本可复用、准确率高、省 token,但劣势是什么?脚本存哪里?能否封装重复脚本? 一、结论先行 业界共识:2026 年 Claude Code / Codex 社区已形成明确的黄金法则: \u003e \"Anything done twice should become a skill.\" \u003e —— 引导 AI 走过同一流程超过一次,就该沉淀成 skill/脚本。 \u003e (来源:Armin Ronacher《Agentic Coding Recommendations》,Zyte 团队博客均有相同表述) 但脚本化不是全场景通吃。需要按任务类型判断,并且关键要让 AI 知道你有什么脚本——否则脚本库形同虚设。 --- 二、脚本化的优势 | 优势 | 具体表现 | |-----|---------| | Token 省 | 脚本不进上下文,AI 只需 bash script.sh 一句话。相比 AI 逐步生成命令,能省 10~20 倍上下文消耗 | | 准确率高 | 脚本是确定性执行,AI 每次重新生成可能出细微差别(变量名、参数顺序、边界处理) | | 可复用 | 复杂逻辑一次调好,以后所有类似任务都调它 | | 可测试 | 脚本能单独跑、单元测试,AI 每次生成的一次性代码难以测试 | | 可审计 | 脚本进 git 有版本历史,能追溯谁改的、为什么;AI 每次生成的代码没这层追踪 | | 跨会话稳定 | 会话切换、模型升级都不影响脚本行为,AI 的每次生成结果会漂移 | --- 三、脚本化的劣势(容易忽略但很重要) 1. 上下文遗忘 (Context Rot) 脚本存在磁盘上,但 AI 不知道它存在,除非: - CLAUDE.md 里明确列了 - 或者当次任务里让 AI 先 ls scripts/ 搜索 结果:你有一堆好脚本,AI 却重新写了个功能类似的新脚本。这是脚本库最大的失败模式。 2. 僵化 (Rigidity) 脚本一旦定稿,只解决它被写出来的那个场景。稍微换个需求(比如从\"扫描 md\"变成\"扫描 md 和 pdf\"),AI 要么改脚本(有风险破坏其他调用者)、要么写新的(违背复用初衷)。 3. 抽象层泄漏 复杂脚本一旦封装成\"黑盒调用\",出错时 AI 不知道内部逻辑,debug 变难。反倒是\"AI 每次生成简单代码\"更透明可读。 4. 维护成本 脚本多了要维护:测试、文档、废弃标记。5 个不用的脚本比 50 个混乱脚本更危险,因为 AI 可能挑到过时的用。 5. 失去灵活性 原生 AI 生成的价值之一是灵活适配上下文,脚本化会牺牲这点。比如\"生成 manifest\"这种确定性任务适合脚本,\"根据这次对话内容整理文档\"就不适合。 --- 四、判断表:什么该脚本化,什么不该 | 场景特征 | 该脚本化? | 例子 | |---------|:---:|------| | 确定性输入输出,规则明确 | ✅ | 生成 manifest、下载图片、部署脚本 | | 副作用敏感(改文件、调 API) | ✅ | 数据库迁移、批量重命名 | | 重复次数 ≥ 3 | ✅ | 每次都跑的 lint/build/test | | 要多人/多机器一致 | ✅ | CI/CD、初始化脚本 | | 一次性任务 | ❌ | \"帮我看下这个 bug\" | | 需要根据上下文调整 | ❌ | \"根据这次讨论整理文档\" | | 探索/调试性任务 | ❌ | \"试试能不能优化性能\" | | 需要人在环判断 | ❌ | 代码审查、方案讨论 | --- 五、存哪里:两套方案 方案 1:项目内 scripts/ 目录 + CLAUDE.md 索引 `` 项目/ ├── scripts/ │ ├── generate-manifest.ps1 │ └── serve.js └── CLAUDE.md ← 关键:必须在这里索引脚本清单 ` - 优点:跟项目走,git 版本化,协作者 clone 就有 - 关键:CLAUDE.md 必须列出脚本清单和用途,否则 AI 找不到 = 不存在 方案 2:Claude Code Skills(2026 官方标准) ` 项目/.claude/skills/generate-docs/ ├── SKILL.md ← 元数据 + 触发条件 + 使用说明 ├── scripts/ ← 实际脚本 │ └── generate.ps1 └── references/ ← 参考资料(文档、模板) ` 或全局位置 ~/.claude/skills/(所有项目共享)。 核心机制:SKILL.md 的 "
+                                                               }
+                                                           ]
+                                          },
+                                          {
+                                              "type":  "dir",
+                                              "name":  "架构设计",
+                                              "title":  "架构设计",
+                                              "children":  [
+                                                               {
+                                                                   "type":  "file",
+                                                                   "name":  "20260701113145_知识库信息架构与功能规划.md",
+                                                                   "title":  "知识库信息架构与功能规划",
+                                                                   "path":  "docs/技术方案/架构设计/20260701113145_知识库信息架构与功能规划.md",
+                                                                   "mtime":  1782876815,
+                                                                   "content":  "知识库信息架构与功能规划 \u003e 规划日期:2026-07-01 \u003e 讨论问题: \u003e 1. 文档该\"每个讨论单独文件夹\"还是\"按类型分区\"? \u003e 2. 文档之间能否关联?关联点击后能预览、能回退、回退后保留原浏览位置吗? \u003e 3. 整体判断项目要用哪些功能,业界有无成熟项目可参考改进? --- 一、核心结论 业界已有直接对标项目:Quartz(开源、静态、TypeScript)。它就是\"Obsidian Publish 的免费开源版\",原生支持:双向链接、反向链接(backlinks)、关系图谱(graph view)、全文搜索、Obsidian 语法兼容。多个 2026 年评测都把它列为\"个人知识库 / 数字花园\"的首选静态方案。 但是否要迁移到 Quartz 需要权衡(详见第五节):Quartz 需要 Node + 构建流程,而本项目当前的核心优势是\"零构建、双击即用 + 本地增删\"。更务实的路径是:借鉴 Quartz 的功能设计,在现有架构上增量实现,而非推倒重来。 --- 二、问题 1:文件夹组织 —— 按类型分区 vs 每讨论单独文件夹 业界共识:文件夹、标签、链接是三个正交维度 来自 Obsidian/Logseq 社区的成熟结论(Jorge Arango、Steph Ango 等 PKM 专家反复印证): | 维度 | 表达什么 | 关系 | 特点 | |-----|---------|------|------| | 文件夹 (Folder) | \"存在哪\" | 一对一(一个文件只能在一个文件夹) | 物理存储,最弱的语义关系 | | 标签 (Tag) | \"有什么属性\" | 多对多 | 扁平、灵活、横向关联 | | 链接 (Link) | \"指向谁\" | 多对多 | 语义关联,知识网络的骨架 | 关键洞察:不要用文件夹承担过多语义。文件夹只管\"物理归档\",真正的知识关联靠链接和标签。 对本项目的判断 当前你已经是\"按类型分区\"(技术方案/物料测试/项目复盘/示例方案),这个方向是对的,建议保持。理由: - \"每讨论单独文件夹\"的问题:讨论会越来越多,每个建文件夹会导致目录树极度膨胀,且很多讨论只有 1 个文件,文件夹变成累赘 - \"按类型分区\"的优势:类型数量有限(技术方案、复盘、测试...),目录树稳定;同类内容集中,好找 - 补充建议: - 文件夹粗分类(按\"类型/领域\")即可,不要分太细 - 细粒度的关联交给标签(md frontmatter 里写 tags: [MCP, 图片生成])和双向链接 - 命名继续用 YYYYMMDDHHMMSS_标题,天然按时间排序 推荐结构 `` docs/ ├── 技术方案/ ← 按类型(现状,保持) ├── 项目复盘/ ├── 物料测试/ ├── 示例方案/ └── (未来可加) 索引/ ← 放 MOC(Map of Content)聚合页 ` \u003e MOC(内容地图):一种业界实践,用一篇\"目录页\"文档,手动链接聚合某主题下的所有相关文档。比文件夹更灵活,是\"人工策展的入口\"。 --- 三、问题 2:文档关联 + 预览 + 回退 + 保留位置 拆成 4 个子能力,逐一判断可行性: 2.1 文档之间能否关联? ✅ 完全可做 方案:支持 Markdown 的 wiki 链接语法或标准链接,渲染时转成可点击的站内跳转。 - 标准 md 链接:方案对比 — marked.js 已支持,只需拦截点击转为 hash 路由 - wiki 链接(Obsidian 风格):[[20260630_AI原型方案]] — 需在渲染前用正则替换成 \u003ca\u003e,匹配 manifest 里的文件 - 实现难度:低。在 viewers.js 的 renderMarkdown 里加链接处理即可 2.2 关联点击后能预览? ✅ 已经能 现在点目录树就能预览,关联链接本质是\"程序化触发同样的路由\"。改 location.hash 即可复用现有预览逻辑。 2.3 能回退吗? ✅ 已经能(浏览器原生) 当前用 location.hash 做路由,浏览器的前进/后退按钮天然可用。点链接跳转会进历史栈,点后退就回到上一篇。可再加个页内\"← 返回\"按钮调 history.back()。 2.4 回退后保留原浏览位置? ⚠️ 需要额外实现 这是唯一需要专门做的。现状:回退后文档从顶部重新渲染,滚动位置丢失。 解决方案: - 监听内容区滚动,把每篇文档的 scrollTop 存进一个 Map(key = 文档路径) - 路由切换/回退时,渲染完成后恢复该文档记录的滚动位置 - 配合 history.state 或 sessionStorage 持久化 - 实现难度:中等,约 30~50 行代码 小结:四个能力里三个几乎白送,只"
+                                                               },
+                                                               {
+                                                                   "type":  "file",
+                                                                   "name":  "20260701135840_知识库文件组织最佳实践.md",
+                                                                   "title":  "知识库文件组织最佳实践",
+                                                                   "path":  "docs/技术方案/架构设计/20260701135840_知识库文件组织最佳实践.md",
+                                                                   "mtime":  1782885651,
+                                                                   "content":  "知识库文件组织方案:面向 AI 协作的最佳实践 \u003e 规划日期:2026-07-01 \u003e 核心问题: \u003e 1. 文件时间是否需要单独维护? \u003e 2. 当前 YYYYMMDDHHMMSS_标题.md 命名是否合理? \u003e 3. 好的知识库整理方式应该是怎样的(便于人和 AI 查看)? \u003e 4. 如何避免 AI 新建文件时放得乱七八糟? --- 一、关于文件时间:不需要单独维护 结论先行:文件系统的 mtime(最后修改时间)已经足够,不需要在文件名或 frontmatter 里重复记录。 理由 1. 文件系统自带:generate-manifest.ps1 可以直接读 $file.LastWriteTime,零维护成本 2. 自动更新:每次编辑文档,mtime 自动刷新,不会忘记更新\"手动维护的时间字段\" 3. 业界共识:Obsidian / Logseq / Dendron 都不在文件名里放\"修改时间\",只放\"创建时间\"(若需要) 4. 文件名时间戳的用途:是为了全局唯一性 + 按时间排序,不是为了\"显示修改时间\" 当前应该做的: - generate-manifest.ps1 扫描时加一行:\"mtime\": $file.LastWriteTime.ToUnixTimeSeconds() - 前端从 manifest 读 mtime 显示\"3 天前\"/\"今天\"/\"2026-07-01\" - 文件名保持现状(YYYYMMDDHHMMSS_标题.md),不改 --- 二、当前命名方案评估 你现在的 20260701135840_标题.md 命名,业界怎么看? 优点 ✅ | 特点 | 价值 | |-----|------| | 时间戳前缀 | 全局唯一,自然按创建时间排序 | | 人类可读标题 | 不看目录树也能猜到内容 | | 便于 AI grep | grep \"20260701.脚本化\" 能按日期 + 关键词组合查询 | | 支持重名 | 不同时间讨论同一主题,文件名不冲突 | 业界对比 | 方案 | 代表工具 | 例子 | 评价 | |-----|---------|------|------| | 时间戳前缀 | 你的项目、Zettelkasten 传统 | 20260701135840_标题.md | ✅ 唯一性最强,排序稳定 | | 纯标题(依赖文件夹) | Obsidian 默认 | 技术方案/知识库架构.md | ⚠️ 重名要手动改,AI 易冲突 | | 点层次(Dendron) | Dendron | proj.kb.arch.20260701.md | ✅ 语义层次清晰,但学习曲线陡 | | Johnny Decimal | 企业文档 | 10-19 项目/12 知识库/12.01 架构.md | ✅ 适合大规模,但过于僵化 | | UUID/哈希 | Logseq | 65a3f8c2-...md | ❌ 人类不可读,只能靠链接 | 结论:你的方案在\"便于 AI 协作\"这个维度上优于 Obsidian 默认(纯标题)和 Logseq(UUID),等同于 Dendron 点层次,但更简单。 唯一的改进空间 当前 YYYYMMDDHHMMSS 精确到秒,14 位数字。业界有两种简化: 1. 精确到分钟:YYYYMMDDHHMM(12 位,够用了,一分钟内创建两个文档的概率极低) 2. 精确到天 + 序号:YYYYMMDD_01_标题.md(同一天多篇时手动递增序号) 我的建议:保持现状(到秒),因为: - AI 自动生成文件时,到秒更保险(AI 可能一次对话生成多个文件) - 14 位 vs 12 位对人类可读性影响不大(反正主要看标题) - 改了要迁移历史文件,性价比低 --- 三、好的知识库整理方式(业界共识) 综合 PKM 社区(Obsidian/Logseq/Roam)、学术界(Zettelkasten)、企业(Johnny Decimal)和 2026 年 AI 协作实践,形成以下共识: 核心原则(5 条黄金法则) 1. 文件夹是\"物理归档\",不是\"语义关系\" | 错误做法 ❌ | 正确做法 ✅ | |----------|----------| | 按\"项目 A/项目 B/项目 C\"分文件夹 | 按\"类型\"分:技术方案/复盘/参考资料 | | 一个笔记涉及多个项目时不知道放哪 | 用链接和标签表达\"涉及多个项目\" | | 项目结束后文件夹堆积,不敢删 | 项目结束后文档还在,链接依然有效 | 引用:Jorge Arango(《Living in Information》作者,PKM 专家): \u003e \"Folders are where things live, not what they mean. Use"
+                                                               },
+                                                               {
+                                                                   "type":  "file",
+                                                                   "name":  "20260701144849_知识库可扩展性方案_含论文佐证.md",
+                                                                   "title":  "知识库可扩展性方案_含论文佐证",
+                                                                   "path":  "docs/技术方案/架构设计/20260701144849_知识库可扩展性方案_含论文佐证.md",
+                                                                   "mtime":  1782888893,
+                                                                   "content":  "知识库可扩展性方案(含学术佐证与实战验证) \u003e 规划日期:2026-07-01 \u003e 核心问题:当前结构能否承受文件持续增长(100/500/1000+ 篇)? \u003e 佐证来源:认知心理学论文 + 8,000 篇笔记实战案例 + Obsidian 社区共识 --- 一、当前结构的可扩展性评估(量化预测) 规模增长时间线 按你和 AI 的对话频率(每天 1-2 篇新文档),预测: | 时间 | 文件数 | 当前结构状态 | 关键痛点 | |-----|-------|------------|---------| | 当前(2026-07) | 27 篇 | ✅ 完全健康 | 无 | | 3 个月后(2026-10) | ~100 篇 | ⚠️ 开始不适 | 技术方案/ 扁平罗列 100 篇,滚动查找费时 | | 6 个月后(2027-01) | ~200 篇 | ❌ 明显失控 | 目录树刷屏,时间排序掩盖语义分组 | | 1 年后(2027-07) | ~400 篇 | ❌ 严重失控 | 扁平结构完全失效,必须靠搜索但没有全文搜索 | | 2 年后(2028-07) | ~800+ 篇 | ❌ 不可用 | 浏览器/文件管理器卡顿,目录树无法浏览 | 根本原因:认知负担的指数增长 当前是一级分类 + 扁平罗列,这是经典的\"小规模可用、大规模崩溃\"架构。 --- 二、学术佐证:认知科学对文件组织的硬性约束 佐证 1:Miller\u0027s Law — 工作记忆容量 = 7±2 项 原始论文:George A. Miller (1956), _\"The Magical Number Seven, Plus or Minus Two: Some Limits on Our Capacity for Processing Information\"_, Psychological Review, Vol 63(2), 81–97. 核心发现: - 人类工作记忆(短期记忆)一次只能处理 5-9 个信息块(chunks) - 超过这个数量,识别准确率急剧下降,决策时间指数增长 对文件组织的影响: - 扁平文件夹的认知上限 ≈ 30-50 个文件(超过就需要二级分组) - 一级目录的数量上限 ≈ 7-9 个(如技术方案/复盘/参考...不应超过 9 个顶级分类) - 二级子目录上限 ≈ 5-10 个(如\"技术方案/\"下的\"AI工具/架构/工具流程\"等不应超过 10 个) 实证数据(Laws of UX, 2026): \u003e \"Don\u0027t use the \u0027magical number seven\u0027 to justify unnecessary design limitations. Organize content into smaller chunks to help users process, understand, and memorize easily.\" 应用到你的项目: - 当前技术方案/ 27 篇 → ✅ 尚可 - 100 篇后 → ❌ 超出认知上限 3 倍,必须二级分组 - 二级分组控制在 5-10 个子目录,每个子目录 ≤50 篇 佐证 2:认知负荷理论 — 外部化降低内在负荷 核心论文: - Sweller, J. (2023), _\"Cognitive Load Theory\"_, Educational Psychology Review - Frontiers in Psychology (2026), _\"Cognitive offloading through digital tools and its relationship with critical thinking, task persistence, and learning depth\"_ 核心发现: - 外部化(Externalization):把信息从大脑移到外部系统,显著降低认知负荷 - 组织结构的价值:良好的分类体系是\"认知卸载\"的基础设施 - 过度扁平 = 认知浪费:每次找文件都要\"扫描全部 + 人脑过滤\",浪费工作记忆 引用(the-lbm.com, 2026): \u003e \"By effectively managing the information you engage with, you can control the cognitive load on your working memory. Organizing information into manageable chunks, prioritizing what\u0027s important... facilitates the efficient transfer of informatio"
+                                                               }
+                                                           ]
+                                          },
+                                          {
+                                              "type":  "dir",
+                                              "name":  "研究调研",
+                                              "title":  "研究调研",
+                                              "children":  [
+                                                               {
+                                                                   "type":  "file",
+                                                                   "name":  "20260701_SimonWillison方案详解.md",
+                                                                   "title":  "SimonWillison方案详解",
+                                                                   "path":  "docs/技术方案/研究调研/20260701_SimonWillison方案详解.md",
+                                                                   "mtime":  1782871734,
+                                                                   "content":  "Simon Willison 的 claude-code-transcripts 方案详解 \u003e 作者：Simon Willison（Datasette 项目创始人，知名开源开发者） \u003e 项目地址：https://github.com/simonw/claude-code-transcripts --- 📌 方案定位 将 Claude Code 对话转换为精美的、可分享的 HTML 文档 与我们的 PowerShell 脚本不同，Simon 的方案专注于： - ✅ 可视化展示 - 生成美观的网页而非文本报告 - ✅ 公开分享 - 发布到 GitHub Gist 获得在线链接 - ✅ 完整归档 - 支持批量处理所有历史会话 --- 🛠️ 技术实现 技术栈 `` Python (54.8%) - 核心逻辑 HTML (42.0%) - 输出模板 JavaScript (3.2%) - 交互增强 ` 依赖工具 - uv - Python 包管理（类似 pip 的现代替代） - GitHub CLI - 可选，用于发布到 Gist --- 📦 安装与使用 安装 `bash 方式 1：安装到全局 uv tool install claude-code-transcripts 方式 2：临时运行（无需安装） uvx claude-code-transcripts --help ` 核心命令 1. 交互式选择（最常用） `bash claude-code-transcripts 弹出选择器，选择本地会话，自动在浏览器打开 ` 2. 处理本地会话 `bash 转换指定会话 claude-code-transcripts local \u003csession-id\u003e 发布到 Gist（需要 GitHub CLI 登录） claude-code-transcripts local \u003csession-id\u003e --gist ` 3. 转换指定文件 `bash claude-code-transcripts json session.jsonl -o output-dir/ ` 4. 批量归档所有会话 `bash 生成完整存档索引 claude-code-transcripts all --open 预览不实际创建 claude-code-transcripts all --dry-run ` --- 📄 输出效果 文件结构 ` output-directory/ ├── index.html 索引页：显示提示列表和提交时间线 ├── page-001.html 第 1 页对话内容 ├── page-002.html 第 2 页对话内容 ├── ... └── session.json 原始数据（可选） ` HTML 特性 - ✅ 移动端友好 - 响应式设计 - ✅ 分页显示 - 长对话自动分页 - ✅ 语法高亮 - 代码块自动着色 - ✅ GitHub 集成 - 自动识别仓库并生成提交链接 - ✅ 时间线视图 - 索引页显示对话时间轴 存档索引（all 命令） ` archive/ ├── index.html 所有项目列表 ├── project-A/ │ ├── index.html 项目 A 的所有会话 │ ├── session-1/ │ │ ├── index.html │ │ └── page-*.html │ └── session-2/... └── project-B/... ` --- 🎯 核心功能对比 | 功能 | Simon Willison 方案 | 我们的 PowerShell 脚本 | |------|---------------------|----------------------| | 输出格式 | 美观的 HTML 网页 | Markdown 文本报告 | | 可视化 | ✅ 网页展示 + 分页 | ❌ 纯文本 | | 分享能力 | ✅ 发布到 Gist 获得链接 | ❌ 需手动分享文件 | | 批量处理 | ✅ all 命令处理所有会话 | ❌ 需手动逐个运行 | | GitHub 集成 | ✅ 自动识别仓库和提交 | ❌ 无集成 | | 交互选择 | ✅ 交互式会话选择器 | ❌ 需手动指定路径 | | 移动端 | ✅ 响应式设计 | ❌ 纯文本无响应式 | | 安装依赖 | 需要 Python + uv | ✅ Windows 原生 PowerShell | | 数据提取 | 主要用于展示 | ✅ 结构化 JSON 数据 | | 轻量级 | ❌ 需 Python 环境 | ✅ 无额外依赖 | --- 💡 使用场景 Simon 方案适合： 1. 项目复盘分享 - 生成美观网页分享给团队 2. 学习案例展"
+                                                               },
+                                                               {
+                                                                   "type":  "file",
+                                                                   "name":  "20260701_xkzy-harness工程深度调研.md",
+                                                                   "title":  "xkzy-harness工程深度调研",
+                                                                   "path":  "docs/技术方案/研究调研/20260701_xkzy-harness工程深度调研.md",
+                                                                   "mtime":  1782888063,
+                                                                   "content":  "xkzy-harness 工程套件深度调研报告 \u003e 调研对象:D:\\xunfei\\xkzy-harness-plugin \u003e 调研日期:2026-07-01 \u003e 本报告回答:这个工程的本质、行业定位、解决的问题、与业界方案的区别 --- 一、本质定义(What It Really Is) xkzy-harness 是一个「软件工程流程的 Claude Code 插件化编排器」,把部门级开发规范(《AI 编程时代的软件工程 V1.0》)固化成可分发、可升级、可巡检的 12 个命令 + 27 个环节矩阵 + 22 个产物模板,通过 Claude Code 的 skill 机制驱动整个需求生命周期。 核心架构特点 `` [用户需求] → 12 个命令封装的生命周期 ↓ [矩阵路由] R1/R2/R3 按复杂度分级 ↓ [环节委派] 每环节委派给 ecs/opsx 等技能执行 ↓ [状态管理] progress.md 进度账本跨会话/跨角色持久化 ↓ [门禁机制] 👁 人审 / 🌙 条件自动 / 👤 人主导三层门禁 ` 三个关键抽象: 1. 矩阵(matrix.yaml) — 机器可读真相源(SSOT),27 环节 × 档位 × 阶段 × 角色 × 门禁 × 产物 × 推荐 Skill 2. 进度账本(progress.md) — 跨会话/跨角色持久化状态,与 TodoWrite 临时清单分离 3. 委派执行器(work) — 不重新实现环节逻辑,只读账本卡门禁、委派给对应 skill --- 二、依托的流程(What Process It Automates) 五阶段 + R1/R2/R3 分级路由 源自讯飞教育 BG《AI 编程时代的软件工程 V1.0》: ` 阶段1 需求定义 → 阶段2 技术方案设计 → 阶段3 AI 可执行任务拆解 → 阶段4 AI 编码与反馈执行 → 阶段5 测试与验收交付 └────── 横切:一致性检查·持续性检查(贯穿全流程)──────┘ ` 按复杂度分三档,决定哪些环节纳入: | 档位 | 含义 | 增量 | |------|------|------| | R1 | 最小必选核心流程 | 缺陷修复/小增强/内部工具 | | R2 | R1 + 可选:需求分析/交互/视觉/架构/测试方案/系统测试 | 中等功能,涉及交互/视觉/架构 | | R3 | R2 + 必选:测试方案/系统用例/系统测试 + 可选:Mock | 对外核心/高风险/强质量要求 | 关键创新:可选环节在阶段入口一次性决策,不靠 AI 隐式开启 —— 阶段内多角色并行,入口编排清楚并行铺开哪些可选工作流。 Issue 工作项分流(F1/F2) 线上 bug 走 Issue 轨(Fix- 前缀),按紧急度分档: - F2:常规修复,复用后段验证 16 环,砍掉 8 个 feature 前段环节 - F1:紧急热修,stage0 先止血(人授权)→ 再走 F2 完整根治 分流判据(单刀):溯源到未上线 change 的缺陷 = 开发期缺陷,走该 change 回炉;代码已在线上才建 Fix-。 --- 三、利用 AI 什么优势解决什么问题 1. AI 优势利用 | AI 能力 | 如何利用 | 体现在哪 | |---------|---------|---------| | 理解自然语言需求 | /xkzy-harness:start 采集需求名称、判档、生成账本 | 判 R1/R2/R3 时把判据摆给用户、协助决策 | | 生成结构化产物 | 按 22 个标准模板(prd/design/tasks/test-case 等)产出初稿 | work 逐环委派给 ecs/opsx 生成 md | | 读取代码验证契约 | 详细设计/任务拆解时验证 projects/ 真实代码,登记位置 | 防臆测契约(详细设计 §2.5 / tasks.md 证据项) | | 独立审阅(Verifier Agent) | 代码评审按 ≥4 视角产 code-review-report.md,BLOCKER 打回 | work 门禁 4: 🌙 条件门禁(0 BLOCKER 自动过) | | 状态持久化与恢复 | 读 progress.md 断点续推,跨会话/跨角色交接 | work 步骤 0:git pull 拉最新账本 | | 条件判定自动化 | auto_pass_when 全绿 → 🌙自动通过,省逐次人签 | 静测/单测/本地验证/CI 构建 4 个环节 | 2. 解决的核心问题 问题 1:流程口口相传 → 难一致、难升级 痛点:该跑哪些环节、谁签字、产物长什么样,靠文档 + 人工传达,新人上手慢、执行偏差大。 解法:插件 + 矩阵真相源"
+                                                               }
+                                                           ]
+                                          }
+                                      ]
+                     },
+                     {
+                         "type":  "dir",
+                         "name":  "项目复盘",
+                         "title":  "项目复盘",
+                         "children":  [
+                                          {
+                                              "type":  "file",
+                                              "name":  "20260701_对话历史分析工具_成果总结.md",
+                                              "title":  "对话历史分析工具_成果总结",
+                                              "path":  "docs/项目复盘/20260701_对话历史分析工具_成果总结.md",
+                                              "mtime":  1782871095,
+                                              "content":  "成果总结：Claude 对话历史分析工具 ✅ 问题验证 你的问题：Claude 能够读取自己的对话信息吗？能从对话信息里提取开发经验吗？ 答案：完全可以！ --- 🎯 实现成果 1. 探测到对话存储位置 `` C:\\Users\\fjyu9\\.claude\\projects\\\u003c项目路径\u003e\\\u003c会话ID\u003e.jsonl ` 2. 开发了对话分析工具 文件位置：scripts/analyze-conversation-v2.ps1 功能： - ✅ 解析 JSONL 格式对话文件 - ✅ 提取用户问题、助手回复、工具使用统计 - ✅ 生成 Markdown 分析报告 - ✅ 导出 JSON 结构化数据 使用方法： `powershell 分析指定会话 .\\scripts\\analyze-conversation-v2.ps1 -SessionFile \"C:\\Users\\fjyu9\\.claude\\projects\\\u003c项目\u003e\\\u003c会话ID\u003e.jsonl\" -ProjectName \"项目名称\" ` 3. 生成了演示报告 输出文件： - docs/项目复盘/20260701095556_KnowledgeBase对话分析演示_对话分析.md - docs/项目复盘/20260701095556_KnowledgeBase对话分析演示_对话数据.json 报告内容： - 📊 基本统计（消息数、轮次数、工具调用） - 💬 用户提出的问题清单 - 🔧 工具使用频率统计 - 📌 助手回复摘要（前 10 条） - 🎯 后续整理建议 --- 🌐 方案印证 通过网络搜索验证，业界已有类似项目： | 项目 | 说明 | 链接 | |------|------|------| | ChatLab | 本地聊天记录分析工具（AI Agent） | GitHub | | WayLog | AI 对话导出为 git 友好知识库 | GitHub | | claude-code-transcripts | Simon Willison 的 Claude 对话处理项目 | GitHub | | Session Format 解析 | Claude Code 会话格式深度分析 | Medium | --- 💡 核心发现 对话文件格式（JSONL） 每行一个 JSON 对象，包含： `json { \"type\": \"user\" | \"assistant\" | \"tool_result\", \"message\": { \"role\": \"user\" | \"assistant\", \"content\": \"文本内容或数组\" }, \"timestamp\": \"2026-07-01T01:33:24.905Z\", \"uuid\": \"唯一标识\", \"parentUuid\": \"父消息ID\" } ` 关键优化点 1. 过滤噪音：排除工具调用结果，只提取真实对话 2. 处理大文件：JSONL 逐行解析，支持大型会话 3. 双格式输出：Markdown（可读性）+ JSON（可编程） --- 🚀 应用场景 ✅ 场景 1：项目复盘 项目结束后，一键提取所有技术讨论和决策过程 示例： `powershell .\\scripts\\analyze-conversation-v2.ps1 -SessionFile \"C:\\Users\\fjyu9\\.claude\\projects\\MyProject\\xxx.jsonl\" -ProjectName \"电商后台重构\" ` ✅ 场景 2：知识沉淀 将经验教训写入 memory 系统，指导后续开发 工作流： 1. 分析对话 → 2. 人工筛选 → 3. 写入 memory/debugging.md 或 memory/decisions/ ✅ 场景 3：跨项目学习 聚合多个项目的相关主题（如\"前端性能优化\"） 批量处理： `powershell Get-ChildItem \"C:\\Users\\fjyu9\\.claude\\projects\" -Recurse -Filter \"*.jsonl\" | ForEach-Object { .\\scripts\\analyze-conversation-v2.ps1 -SessionFile $_.FullName -ProjectName $_.BaseName } ` --- 📂 新增文件清单 ` KnowledgeBase/ ├── scripts/ │ ├── analyze-conversation.ps1 初版（已被 v2 替代） │ └── analyze-conversation-v2.ps1 ✅ 优化版（推荐使用） ├── docs/ │ ├── 技术方案/ │ │ └── 20260701"
+                                          },
+                                          {
+                                              "type":  "file",
+                                              "name":  "20260701095556_KnowledgeBase对话分析演示_对话分析.md",
+                                              "title":  "KnowledgeBase对话分析演示_对话分析",
+                                              "path":  "docs/项目复盘/20260701095556_KnowledgeBase对话分析演示_对话分析.md",
+                                              "mtime":  1782870957,
+                                              "content":  "KnowledgeBase对话分析演示 - 对话历史分析报告 \u003e 生成时间：2026-07-01 09:55:56 \u003e 数据源：686eaaa5-7b41-483e-a23e-9db3d28e55b9.jsonl --- 📊 基本统计 | 指标 | 数量 | |------|------| | 用户消息数 | 3 | | 助手回复数 | 18 | | 工具调用次数 | 0 | | 对话轮次 | 3 | --- 💬 用户提出的问题/需求 1. [01:33:24] \u003e 先熟悉下项目我们来讨论问题. 2. [01:38:20] \u003e 我们要讨论的问题是,claude能够读取自己的对话信息吗,从对话信息里面获取我需要整理的内容,比如我需要整理开发某个项目中遇到的问题,可以提取的经验,用于指导后续的开发.这样我就需要把这个项目开发时的所有对话信息都作为上下文来整理. 3. [01:45:30] \u003e 从网上找相关的方案或者项目互相印证一下 --- 🔧 工具使用统计 无工具调用记录 --- 📌 助手回复摘要（前 10 条） 1. [01:34:48] 我来熟悉一下这个项目的结构和内容。 2. [01:37:39] 已经熟悉了项目结构 ✓ 项目概览 KnowledgeBase — 个人知识库文档浏览器 核心特性 - 📂 纯静态、离线可用的文档系统 - 🎨 支持 Markdown / PDF / Word / 图片预览 - 🔍 自动生成目录树 + 快速搜索 - 🌗 亮/暗主题切换 - 🚀 本地双击启动（启动.bat）/ GitHub Pages 在线部署 技术架构 - 前端：纯 HTML/CSS/JS，无构建步骤 - 第三方库：marked、highlight.js、mermaid、PDF.js、docx-preview（已本地化） - 自动化：PowerShell 脚本生成清单 + GitHub Actions 部署 当前文档分类 - 技术方案（AI 原型设计、物料生成方案对比） - 示例方案（讨论模板） - 物料测试（Pollinations AI vs Claude SVG 对比测试） --- 有什么问题要讨论？或者需要我做什么？ 3. [01:38:32] 这是个很好的想法！让我先探测一下 Claude Code 的对话历史存储情况。 4. [01:40:28] 发现了关键文件！让我检查 sessions 目录，这里应该存储着对话历史： 5. [01:41:14] 好的！找到了会话元数据。现在让我查找对话内容的实际存储位置（通常是 JSONL 格式的转录文件）： 6. [01:41:30] 好的，我来执行对话历史分析任务： 7. [01:41:38] 完美！我已经找到了当前会话的对话记录文件。现在让我读取它来展示功能： 8. [01:41:43] 文件太大了，让我先读取开头部分来看看格式： 9. [01:44:11] 太好了！现在让我为你总结一下Claude 读取对话历史并提取经验的完整方案： 📋 方案总结：Claude 对话历史分析与经验提取 ✅ 可行性确认 是的，Claude 完全可以读取自己的对话历史！ 🗂️ 对话历史存储结构 根据刚才的探测，Claude Code 的对话历史存储在： `` C:\\Users\\fjyu9\\.claude\\projects\\\u003c项目路径\u003e\\\u003c会话ID\u003e.jsonl ` - 格式：JSONL（每行一个 JSON 对象） - 内容：完整的对话记录，包括用户消息、AI 回复、工具调用、执行结果 - 当前会话：686eaaa5-7b41-483e-a23e-9db3d28e55b9.jsonl（492.6KB） 📊 JSONL 文件结构 每行记录包含： - type: 消息类型（user/assistant/attachment/tool_result） - message.content: 具体内容 - timestamp: 时间戳 - uuid: 唯 [内容过长已截断] 10. [01:46:45] 好的！我现在来开发对话历史分析工具。根据搜索结果验证了我们的方案是可行的，已经有多个类似项目： - ChatLab - 本地聊天记录分析工具 - WayLog - 将 AI 对话导出为 git 友好的知识库 - Simon Willison 的项目 - 专门处理 Claude Code transcripts 现在我来创建一个完整的分析工具： --- 🎯 后续建议 基于以上对话分析，建议将有价值的内容整理为： 1. 技术决策记录 (decisions/) - 架构选型、技术方案讨论 2. 问题解决清单 (debugging.md) - 问题描述 + 解决方案 3. 操作流程 (pro"
+                                          }
+                                      ]
+                     },
+                     {
+                         "type":  "dir",
+                         "name":  "项目复盘案例",
+                         "title":  "项目复盘案例",
+                         "children":  [
+                                          {
+                                              "type":  "file",
+                                              "name":  "20260701_澳门国际化二期_复盘.md",
+                                              "title":  "澳门国际化二期_复盘",
+                                              "path":  "docs/项目复盘案例/20260701_澳门国际化二期_复盘.md",
+                                              "mtime":  1782891137,
+                                              "content":  "澳门国际化二期 项目复盘 \u003e 复盘时间：2026-07-01 \u003e 开发时间范围：2026-06-15 ~ 06-30（二期） \u003e 涉及分支：feature/macao-V7.0.2 → V7.0.3 → V7.2.6.5.1-0630 \u003e 数据来源：7 个会话 / 约 500 条真实需求（typed） \u003e 关联文件：开发经验 · 记忆索引 \u003e 校验说明：本复盘经\"归纳者→独立审阅者\"两轮制衡，16 个 commit hash 全部核实真实存在，关键 key 数量、bug 现象均对照原始会话文本验证。审阅发现的口径混淆已修正。 --- 1. 📋 复盘概览 - 主要目标：rpp-web（Vue2 资源加工平台前端）多语言改造二期——在一期核心机制（$tm/i18n.t 出口、四语言 zh-CN/zh-TW/en-US/pt-BR、resolveBizLocale 语言决策、i18n-check.js 卡口）基础上，完成剩余业务页面的国际化。 - 完成情况：主体完成。T0~T5、工作流程/流程关联/pkg-detail 等核心模块交付；T7 从\"仅评估\"转为实做；收尾期发现并修复个人中心 2 页整页漏翻等遗留问题。 - 关键产出： 1. 约 10+ 个页面/模块的四语言改造（pkg-detail 294key、工作台 T4、工作流程模块 120key 等） 2. i18n-check.js 新增 BARE_RENDER 检测（抓\"key 存进 JS 常量、模板漏包 $tm\"） 3. 3 个专项扫描脚本 + 国际化改造规范手册 + 全局 CLAUDE.md\"批量改造先列清单\"约束 4. 一期审计（357 文件）+ V7.0.3 代码审查（56 提交/149 文件） --- 2. 🎯 完成的任务 任务：页面/模块国际化（T0~T8 + 补充） - T0 公共前置：userCenter/login 四语言壳文件(8个)、跨 app ?lang= 契约（后撤回）、工作室路由命中确认（c7c1f3756） - T1 登录页：rpp-web + Angular 两端，营销区锁中文、仅登录组件内翻译，大量葡/英 CSS 布局适配（5a0652904/d94b04ec75/de4e984fb） - T2 用户中心：3页+3子组件+PersonalInfoManageModule，约 299key（346ae549b） - T3 下载中心：DownloadCenter.vue 全量 $tm，列定义改 computed（规划估 \u003c50key、实测交付 249key）（a31f7585d） - T4 工作台看板：31 文件（workbench namespace 251key / T4 整体交付约 1672key）（b49a20584） - T5 工作室列表查漏：labelCategorys 改 computed（c8bc723f7） - T7 资源加工详情(pkg-detail)：原计划仅评估不改码（评估报告：47 文件、约 1000+ 行硬编码）→ 06-25 用户改主意\"pkg-detail 数据要做多语言，现在开始\" → 实际完成全量改造：主入口+allPkgTabs+多个 contents 子组件，294key（c1ceadd07） - 工作流程模块(prod-line-module)：12 文件全量，约 120key（14cd91986） - 流程关联配置模块：ResourceAuditModule+Dialog，workShop.processCorrelation.* 19key（6c34e3375） - 其他：KnowledgeTreeSelector（ebd5eace0）、DateCondition（5924e6f90）、UserSelectDialog 10key（312dda8b3） - 收尾期补充：VerifyDialog 验证码弹窗、pkg-detail 四指派弹窗标题、改编题型校验、SettingFixedWorkShopDrawer 占位符、众包纠错页 topic-correct-process、task-result 划题 tab 任务：工作室配置/新建页锁定中文 - 做法：work-shop-config.vue（46+处）、work-shop-create.vue（39处）的 $tm 加 {locale:\u0027zh-CN\u0027}（bf0d374e4），延续一期\"配置页复杂、ROI 低故锁中文\"的刻意设计。 任务：一期审计（macao-V7.0.2 vs master） - 需求：核查一期改造有无\"判断逻辑被翻译\"\"大陆工作室错显多语言\"两类隐患。 - 做法：357 改动文件中，核心机制仅 197 行，其余 16000+ "
+                                          },
+                                          {
+                                              "type":  "file",
+                                              "name":  "README.md",
+                                              "title":  "README",
+                                              "path":  "docs/项目复盘案例/README.md",
+                                              "mtime":  1782893145,
+                                              "content":  "项目复盘案例集 本目录收录真实项目的复盘文档,作为技术参考和复盘 skill 效果展示。 --- 📁 案例清单 1. rpp-web 澳门国际化二期 项目背景:Vue2 资源加工平台前端的多语言改造二期(zh-CN/zh-TW/en-US/pt-BR 四语言)。 产出文件: - 复盘文档 — 记录\"做了什么\":任务清单、关键决策、踩坑、问题 - 开发经验 — 提炼\"下次怎么做更好\":可复用技术方案、避坑清单 复盘特点: - 经\"归纳者→独立审阅者\"两轮制衡(分角色机制) - 16 个 commit hash 全部核实真实存在 - 关键数量(key 数、文件数)对照原始会话文本验证 技术亮点: - 静态 i18n 卡口(基线增量策略) - 语言决策集中到单一汇聚点(resolveBizLocale) - 翻译长度导致的布局适配(葡文比中文长 2~4 倍) - BARE_RENDER 检测(抓\"key 存进 JS 常量、模板漏包 $tm\") 适用参考场景: - 存量 Vue 项目引入 i18n - 多租户/多区域语言策略 - 中文→英/葡的 UI 布局适配 - i18n 卡口设计(渐进收紧,不阻塞历史遗留) --- 🔗 关联 生成工具:这些复盘文档由 project-retrospective skill 产出。 方法论: - 脚本过滤噪音(discover_sessions.ps1 + extract_clean.ps1) - Claude 分角色分析(归纳者 + 独立审阅者) - 最多三轮交人审批(防无限循环) - 三路产出:复盘文档 + 记忆沉淀 + 开发经验 如何复用: 1. 技术方案可直接参考(如 i18n 卡口设计、语言决策汇聚) 2. 避坑清单可纳入 checklist(如\"翻译文案不做逻辑判断\") 3. 复盘结构可作为自己项目复盘的模板参考 --- 📝 贡献案例 如果你有其他项目的复盘文档想放进知识库,欢迎补充。要求: - 真实项目,有完整的任务/决策/问题记录 - 最好经过审阅制衡(不是单一视角的流水账) - 技术细节可复用(不只是\"做了 A、做了 B\"的罗列)"
+                                          },
+                                          {
+                                              "type":  "file",
+                                              "name":  "开发经验_rpp-web国际化.md",
+                                              "title":  "开发经验_rpp-web国际化",
+                                              "path":  "docs/项目复盘案例/开发经验_rpp-web国际化.md",
+                                              "mtime":  1782891200,
+                                              "content":  "rpp-web 国际化 开发经验沉淀 \u003e 最近更新：2026-07-01 \u003e 累计来源：澳门国际化二期复盘（2026-06-15 ~ 06-30） \u003e 说明：本文件提炼可复用、可迁移的经验，用于指导后续开发。 \u003e 区别于复盘文档（记录\"做了什么\"），这里回答\"下次怎么做更好\"。 \u003e 关联：二期复盘 · 记忆 [[rpp-web-i18n-guardrail]] --- 🔧 可复用的技术方案 静态 i18n 卡口（基线增量策略） - 适用场景：存量项目引入 i18n 检查，但历史遗留问题多，不能一次性卡死全员提交。 - 做法：卡口只校验\"代码引用的 key 在基准语言存在 + 四语言齐全\"，存量问题冻结进 baseline（count=0 表示最严），只拦新增。 - 效果：渐进收紧，新代码不留债，老债不阻塞。 语言决策集中到单一汇聚点 - 适用场景：多租户/多区域（如大陆 vs 澳门）需要不同语言策略。 - 做法：所有语言判断收敛到一个函数（resolveBizLocale），按路由类型分流；工作室路由 + 工作室语言为空时固定回退基准语言，防止错误区域显示多语言。 - 效果：审计时只需核汇聚点，不必逐调用点排查。 翻译长度导致的布局适配 - 适用场景：中文→英/葡的固定宽度容器（label、表格列、tag、按钮）。 - 做法：优先精简译文（教育语境可缩写）\u003e min-width/min-height+word-break+字号缩小；样式用 .lang-en-US/.lang-pt-BR 类只作用目标语言，中文不动。容器宽度判断的语言源要与 $tm 渲染的语言源同源。 - 效果：葡文（常比中文长 2~4 倍）不撑破布局，且不影响中文。 表头文本省略 + hover tooltip（Element UI） - 做法：mixin + :render-header，而非每列手写 slot 或全局 directive。注意 slot=\"header\" 优先级高于 render-header，已有 slot 的列不会被覆盖。 --- ⚠️ 避坑清单 - 当用翻译文案做逻辑判断时（变量 === $tm(...)、indexOf($tm(...))）→ 查变量来源，若来自后端/SDK（不随语言变）则切语言必失效。判断一律用语言无关的 code/英文常量，$tm 只负责显示。卡口查不出这类。 - 当枚举/常量把 i18n key 存进 name 字段时 → 模板引用必须 {{ $tm(item.name) }}，直接 {{ item.name }} 会显示 key 字符串。这类是卡口 BARE_RENDER 检测的对象，但仍应改造时就注意。 - 当做\"整个模块全量改造\"（国际化/重构/迁移）时 → 第一步先按路由子树枚举全部页面列 checklist（不是靠\"手头碰到的文件\"），逐页勾选。AI 只改被指到的文件、不会自动补全模块全集，边发现边改必遗漏。 - 当菜单标签翻译完成时 → 不等于页面内容翻译完成。菜单和页面内容是两拨工作，菜单全翻会制造\"已完成\"假象，务必逐页验收页面内部。 - 当在 JS 文件里写 i18n 时 → 用 i18n.t()，不要传 $tm 方法引用进普通函数（会丢 this 导致 this.$i18n undefined）。 - 当用 new Vue({...}) 创建独立弹窗实例时 → 必须手动 new Vue({ i18n, ... }) 注入，否则 $tm 崩。 - 当组件 props 的 default 需要翻译时 → default 里拿不到 this，不能写 this.$tm()。用空字符串 default + template 里 || $tm(...) 兜底。 - 当页面出现无限 loading 时 → 给整条 async 链路加统一前缀日志，最后一条日志即卡点。警惕 async + .catch 吞异常造成的\"静默卡死\"；在数据可能缺失处（树遍历 for...of、findRootNode 等）加空值保护。 - 当 label 后想加冒号间距时 → 用全角冒号 ：，不要半角冒号+空格（HTML 会压缩连续空格）。 - 当占位符（{type} 等）翻译时 → 四语言必须都保留占位符，缺一个则传参被丢。葡文注意单复数性数一致（{type} Disponíveis 这类动态拼接易错），可改用动词不定式绕开性数变化。 - 当编辑 JSON 里的 i18n key 时 → 用解析（node 读 key 数）验证 section 归属，别凭肉眼数花括号边界，容易写错 section。 - 当推断部署路径/线上行为时 → 查提交历史（git log -S、看 HEAD 版本），不要基于代码逻辑臆断。部署事实用户/"
+                                          }
+                                      ]
+                     },
+                     {
+                         "type":  "dir",
+                         "name":  "演示项目",
+                         "title":  "演示项目",
+                         "children":  [
+                                          {
+                                              "type":  "dir",
+                                              "name":  "simon-demo",
+                                              "title":  "simon-demo",
+                                              "children":  [
+                                                               {
+                                                                   "type":  "file",
+                                                                   "name":  "index.html",
+                                                                   "title":  "index",
+                                                                   "path":  "docs/演示项目/simon-demo/index.html",
+                                                                   "mtime":  1782872801
+                                                               },
+                                                               {
+                                                                   "type":  "file",
+                                                                   "name":  "page-001.html",
+                                                                   "title":  "page-001",
+                                                                   "path":  "docs/演示项目/simon-demo/page-001.html",
+                                                                   "mtime":  1782872801
+                                                               },
+                                                               {
+                                                                   "type":  "file",
+                                                                   "name":  "page-002.html",
+                                                                   "title":  "page-002",
+                                                                   "path":  "docs/演示项目/simon-demo/page-002.html",
+                                                                   "mtime":  1782872801
+                                                               },
+                                                               {
+                                                                   "type":  "file",
+                                                                   "name":  "page-003.html",
+                                                                   "title":  "page-003",
+                                                                   "path":  "docs/演示项目/simon-demo/page-003.html",
+                                                                   "mtime":  1782872801
+                                                               }
+                                                           ]
+                                          },
+                                          {
+                                              "type":  "dir",
+                                              "name":  "物料测试",
+                                              "title":  "物料测试",
+                                              "children":  [
+                                                               {
+                                                                   "type":  "dir",
+                                                                   "name":  "assets-pollinations",
+                                                                   "title":  "assets-pollinations",
+                                                                   "children":  [
+                                                                                    {
+                                                                                        "type":  "file",
+                                                                                        "name":  "hero.jpg",
+                                                                                        "title":  "hero",
+                                                                                        "path":  "docs/演示项目/物料测试/assets-pollinations/hero.jpg",
+                                                                                        "mtime":  1782829969
+                                                                                    },
+                                                                                    {
+                                                                                        "type":  "file",
+                                                                                        "name":  "icon-delivery.jpg",
+                                                                                        "title":  "icon-delivery",
+                                                                                        "path":  "docs/演示项目/物料测试/assets-pollinations/icon-delivery.jpg",
+                                                                                        "mtime":  1782830015
+                                                                                    },
+                                                                                    {
+                                                                                        "type":  "file",
+                                                                                        "name":  "icon-service.jpg",
+                                                                                        "title":  "icon-service",
+                                                                                        "path":  "docs/演示项目/物料测试/assets-pollinations/icon-service.jpg",
+                                                                                        "mtime":  1782830062
+                                                                                    },
+                                                                                    {
+                                                                                        "type":  "file",
+                                                                                        "name":  "icon-shield.jpg",
+                                                                                        "title":  "icon-shield",
+                                                                                        "path":  "docs/演示项目/物料测试/assets-pollinations/icon-shield.jpg",
+                                                                                        "mtime":  1782830060
+                                                                                    },
+                                                                                    {
+                                                                                        "type":  "file",
+                                                                                        "name":  "logo.jpg",
+                                                                                        "title":  "logo",
+                                                                                        "path":  "docs/演示项目/物料测试/assets-pollinations/logo.jpg",
+                                                                                        "mtime":  1782829925
+                                                                                    },
+                                                                                    {
+                                                                                        "type":  "file",
+                                                                                        "name":  "product-headphone.jpg",
+                                                                                        "title":  "product-headphone",
+                                                                                        "path":  "docs/演示项目/物料测试/assets-pollinations/product-headphone.jpg",
+                                                                                        "mtime":  1782830109
+                                                                                    },
+                                                                                    {
+                                                                                        "type":  "file",
+                                                                                        "name":  "product-phone.jpg",
+                                                                                        "title":  "product-phone",
+                                                                                        "path":  "docs/演示项目/物料测试/assets-pollinations/product-phone.jpg",
+                                                                                        "mtime":  1782830107
+                                                                                    },
+                                                                                    {
+                                                                                        "type":  "file",
+                                                                                        "name":  "product-watch.jpg",
+                                                                                        "title":  "product-watch",
+                                                                                        "path":  "docs/演示项目/物料测试/assets-pollinations/product-watch.jpg",
+                                                                                        "mtime":  1782830166
+                                                                                    }
+                                                                                ]
+                                                               },
+                                                               {
+                                                                   "type":  "file",
+                                                                   "name":  "测试A_PollinationsAI版.html",
+                                                                   "title":  "测试A_PollinationsAI版",
+                                                                   "path":  "docs/演示项目/物料测试/测试A_PollinationsAI版.html",
+                                                                   "mtime":  1782829708
+                                                               },
+                                                               {
+                                                                   "type":  "file",
+                                                                   "name":  "测试B_Claude原生SVG版.html",
+                                                                   "title":  "测试B_Claude原生SVG版",
+                                                                   "path":  "docs/演示项目/物料测试/测试B_Claude原生SVG版.html",
+                                                                   "mtime":  1782829596
+                                                               }
+                                                           ]
+                                          }
+                                      ]
+                     },
+                     {
+                         "type":  "file",
+                         "name":  "00_使用说明.md",
+                         "title":  "使用说明",
+                         "path":  "docs/00_使用说明.md",
+                         "mtime":  1782828699,
+                         "content":  "知识库使用说明 欢迎使用你的个人知识库!这是一个纯静态、离线可用的文档浏览器,用来记录和阅读与 AI 讨论的各种方案。 --- 项目说明 目的 记录与 AI 讨论的各种方案与笔记,解决两个痛点: 1. 随处可用:项目下载/clone 下来,本地能直接看;也能托管到 GitHub Pages,任何设备打开网址就能访问。 2. 告别裸看 md:不想直接打开 md 文件看难受的源码格式。打开 index.html 就能看到左侧目录树 + 右侧渲染好的文档,md/pdf/word/图片都能直接预览。 设计思路 - 左侧目录树 + 右侧预览的经典文档站布局,目录树自动扫描 docs/ 生成。 - 一套代码,两种场景通吃:本地双击启动 / GitHub Pages 在线访问,前端都读同一份 manifest.json 渲染目录,逻辑统一。 - 离线优先:第三方库全部本地化打包进项目,不依赖 CDN,断网也能用。 - 设计规范:色彩 / 间距 / 圆角 / 阴影借鉴成熟设计 Token 体系,支持亮 / 暗主题。 关键技术取舍 | 问题 | 方案 | |------|------| | 浏览器 file:// 安全限制读不了本地文件 | 用 Windows 自带 PowerShell(HttpListener)起零依赖本地服务,无需装 Node/Python | | 本地与 GitHub Pages 目录如何统一 | 本地启动时 PowerShell 扫描、推送时 GitHub Actions 扫描,都生成同款 manifest.json | | PowerShell 5.1 中文乱码 | 脚本存为 UTF-8 with BOM;生成的 manifest 存为 UTF-8 无 BOM | 技术栈 - 目录树 / 路由 / 搜索 / 主题:原生 JS 手写,无框架 - Markdown:marked.js + highlight.js(代码高亮)+ mermaid(图表) - PDF:PDF.js - Word(.docx):docx-preview(仅 .docx,复杂排版还原度有限) - 图片:原生 \u003cimg\u003e - 本地服务:PowerShell + .NET HttpListener - 自动部署:GitHub Actions → GitHub Pages 项目结构 `` KnowledgeBase/ ├── index.html 入口 ├── 启动.bat Windows 一键启动 ├── manifest.json 目录清单(自动生成) ├── docs/ 你的文档放这里 ├── assets/ │ ├── css/ 设计 token + 样式 │ ├── js/ app.js(主逻辑)+ viewers.js(预览器) │ └── vendor/ 本地化的第三方库 ├── scripts/ │ ├── generate-manifest.ps1 扫描 docs/ 生成清单 │ └── serve.ps1 本地静态服务器 └── .github/workflows/pages.yml 自动部署 ` --- 怎么添加文档 把文件直接丢进 docs/ 目录即可,支持的格式: | 格式 | 扩展名 | 说明 | |------|--------|------| | Markdown | .md | 推荐格式,支持代码高亮、表格、Mermaid 图表 | | PDF | .pdf | 逐页渲染 | | Word | .docx | 仅支持新版 .docx(不支持老的 .doc) | | 图片 | .png .jpg .svg 等 | 直接预览 | 用文件夹分组 在 docs/ 下建子文件夹,左侧目录树会自动按文件夹分组。例如: ` docs/ ├── 前端方案/ │ ├── 组件库选型.md │ └── 状态管理对比.md └── 后端方案/ └── 数据库设计.md ` 控制排序 文件按名称排序。想手动控制顺序,可以加数字前缀,显示时会自动隐藏: - 01_概述.md → 显示为「概述」 - 02_详细设计.md → 显示为「详细设计」 两种打开方式 本地(Windows) 双击项目根目录的 启动.bat,它会: 1. 自动扫描 docs/ 生成目录清单 2. 启动一个本地小服务(用 Windows 自带的 PowerShell,无需安装任何东西) 3. 自动打开默认浏览器 \u003e 为什么不能直接双击 index.html?浏览器出于安全限制,file:// 方式打不开本地的 md/pdf 文件。启动.bat 起一个本地服务就能绕开这个限制,Chrome/Edge 都能正常用。 在线(GitHub Pages) 推送到 GitHub 后,通过"
+                     }
+                 ]
+}
