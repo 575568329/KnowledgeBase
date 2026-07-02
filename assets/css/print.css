@@ -1,0 +1,190 @@
+/* ============================================================
+ * print.css — 打印/导出 PDF 专用样式
+ * ============================================================ */
+
+@media print {
+  /* 隐藏不需要打印的元素 */
+  .sidebar,
+  .resize-handle,
+  .topbar,
+  .breadcrumb,
+  .mode-badge,
+  .scrim {
+    display: none !important;
+  }
+
+  /* 主内容区占满整页 */
+  .app {
+    display: block !important;
+    grid-template-columns: unset !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  .main {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+  }
+
+  /* 内容区样式优化 */
+  .content {
+    display: block !important;
+    height: auto !important;
+    padding: 0 !important;  /* 去掉内容区 padding，由 @page margin 统一控制 */
+    max-width: 100% !important;
+    overflow: visible !important;
+  }
+
+  /* 欢迎页不打印 */
+  .welcome {
+    display: none !important;
+  }
+
+  /* 文档内容容器 */
+  .doc-card {
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+  }
+
+  /* 代码块优化 */
+  pre {
+    page-break-inside: avoid;
+    border: 1px solid #ddd !important;
+    background: #f8f8f8 !important;
+    padding: 12px !important;
+    font-size: 10pt !important;
+    line-height: 1.4 !important;
+    overflow: visible !important;
+    white-space: pre-wrap !important;
+    word-wrap: break-word !important;
+  }
+
+  code {
+    background: #f0f0f0 !important;
+    padding: 2px 4px !important;
+    border-radius: 3px !important;
+    font-size: 9pt !important;
+  }
+
+  /* 表格优化 */
+  table {
+    page-break-inside: avoid;
+    border-collapse: collapse !important;
+    width: 100% !important;
+    font-size: 10pt !important;
+  }
+
+  th, td {
+    border: 1px solid #ddd !important;
+    padding: 8px !important;
+  }
+
+  th {
+    background: #f0f0f0 !important;
+  }
+
+  /* 图片优化 */
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
+
+  /* 标题避免分页 */
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+    margin-top: 1.5em !important;
+    margin-bottom: 0.5em !important;
+  }
+
+  h1 {
+    font-size: 24pt !important;
+    border-bottom: 2px solid #333 !important;
+    padding-bottom: 8px !important;
+  }
+
+  h2 {
+    font-size: 20pt !important;
+    border-bottom: 1px solid #666 !important;
+    padding-bottom: 6px !important;
+  }
+
+  h3 {
+    font-size: 16pt !important;
+  }
+
+  /* 段落优化 */
+  p {
+    orphans: 3;
+    widows: 3;
+    font-size: 11pt !important;
+    line-height: 1.6 !important;
+    margin: 0.8em 0 !important;
+  }
+
+  /* 列表优化 */
+  ul, ol {
+    page-break-inside: avoid;
+    margin: 0.8em 0 !important;
+    padding-left: 2em !important;
+  }
+
+  li {
+    font-size: 11pt !important;
+    line-height: 1.6 !important;
+    margin: 0.3em 0 !important;
+  }
+
+  /* 链接显示 URL */
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+    color: #666;
+  }
+
+  /* 内部链接不显示 URL */
+  a[href^="#"]:after,
+  a[href^="docs/"]:after {
+    content: "";
+  }
+
+  /* 引用块优化 */
+  blockquote {
+    page-break-inside: avoid;
+    border-left: 4px solid #ddd !important;
+    padding-left: 16px !important;
+    margin: 1em 0 !important;
+    font-size: 11pt !important;
+    color: #555 !important;
+  }
+
+  /* 分隔线 */
+  hr {
+    border: none !important;
+    border-top: 1px solid #ccc !important;
+    margin: 2em 0 !important;
+  }
+
+  /* 页眉页脚 */
+  @page {
+    margin: 15mm;  /* 标准 1.5cm 边距，左右上下统一 */
+  }
+
+  /* Mermaid 图表优化 */
+  .mermaid {
+    page-break-inside: avoid;
+    max-width: 100% !important;
+  }
+
+  .mermaid svg {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}

@@ -39,7 +39,8 @@
     uploadBtn: document.getElementById('upload-btn'),
     uploadInput: document.getElementById('upload-input'),
     resizeHandle: document.getElementById('resize-handle'),
-    tagFilter: document.getElementById('tag-filter')
+    tagFilter: document.getElementById('tag-filter'),
+    exportPdf: document.getElementById('export-pdf')
   };
 
   /* ---------------- 主题 ---------------- */
@@ -291,6 +292,7 @@
     renderBreadcrumb(path);
     highlightActive(path);
     dom.openRaw.style.display = 'grid';
+    dom.exportPdf.style.display = 'grid';  // 显示导出按钮
     dom.openRaw.onclick = function () { window.open(encodeURI(path), '_blank'); };
     // 先滚到顶,再渲染;渲染完成后恢复该文档记录的滚动位置
     dom.content.scrollTop = 0;
@@ -309,6 +311,7 @@
     renderBreadcrumb(null);
     highlightActive(null);
     dom.openRaw.style.display = 'none';
+    dom.exportPdf.style.display = 'none';  // 隐藏导出按钮
     document.title = '知识库';
     const count = state.flatFiles.length;
     dom.content.innerHTML =
@@ -567,6 +570,31 @@
       const tag = dom.tagFilter.value;
       filterByTag(tag);
     });
+  }
+
+  /* ---------------- 导出 PDF ---------------- */
+  function exportToPdf() {
+    if (!state.currentPath) {
+      alert('请先打开一篇文档');
+      return;
+    }
+
+    // 设置打印前的文档标题（会显示在 PDF 元数据中）
+    const originalTitle = document.title;
+    const fileName = stripExt(state.currentPath.split('/').pop());
+    document.title = fileName;
+
+    // 触发浏览器打印对话框
+    window.print();
+
+    // 恢复原标题
+    setTimeout(function () {
+      document.title = originalTitle;
+    }, 100);
+  }
+
+  if (dom.exportPdf) {
+    dom.exportPdf.addEventListener('click', exportToPdf);
   }
 
   /* ---------------- 工具 ---------------- */
